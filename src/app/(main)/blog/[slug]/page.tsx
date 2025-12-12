@@ -6,7 +6,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { BLOG_ARTICLES } from '@/lib/blog-articles-with-content';
-import { Breadcrumb } from '@/components/sections/Breadcrumb';
 
 // Helper function to render markdown-like content
 function renderArticleContent(content: string) {
