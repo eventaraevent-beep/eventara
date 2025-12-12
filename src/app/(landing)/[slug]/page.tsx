@@ -8,8 +8,6 @@ import { notFound } from 'next/navigation';
 import {
   generateAllSlugCombinations,
   parseSlug,
-  LOCATIONS,
-  SERVICES,
 } from '@/lib/constants';
 import {
   generateTitle,
