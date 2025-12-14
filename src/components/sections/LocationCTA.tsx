@@ -52,7 +52,7 @@ export function LocationCTA({ location }: LocationCTAProps) {
 
         <motion.p
           variants={itemVariants}
-          className="font-inter text-xl text-gray-300 mb-4 max-w-2xl mx-auto"
+          className="font-inter text-xl text-cream-light/90 mb-4 max-w-2xl mx-auto"
         >
           Our {location.name} event experts are ready to bring your vision to life. From intimate gatherings to grand celebrations, we handle every detail.
         </motion.p>
@@ -91,7 +91,7 @@ export function LocationCTA({ location }: LocationCTAProps) {
             <p className="font-playfair text-3xl font-bold text-event-gold mb-2">
               500+
             </p>
-            <p className="font-inter text-gray-400">
+            <p className="font-inter text-cream-light/70">
               Events Planned
             </p>
           </div>
@@ -99,7 +99,7 @@ export function LocationCTA({ location }: LocationCTAProps) {
             <p className="font-playfair text-3xl font-bold text-event-gold mb-2">
               98%
             </p>
-            <p className="font-inter text-gray-400">
+            <p className="font-inter text-cream-light/70">
               Client Satisfaction
             </p>
           </div>
@@ -107,7 +107,7 @@ export function LocationCTA({ location }: LocationCTAProps) {
             <p className="font-playfair text-3xl font-bold text-event-gold mb-2">
               7 Years
             </p>
-            <p className="font-inter text-gray-400">
+            <p className="font-inter text-cream-light/70">
               Industry Experience
             </p>
           </div>

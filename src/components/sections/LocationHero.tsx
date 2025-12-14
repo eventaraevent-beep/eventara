@@ -45,7 +45,7 @@ export function LocationHero({ location }: LocationHeroProps) {
   return (
     <section className="relative min-h-screen pt-20 w-full overflow-hidden bg-rich-black">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-gray-900 to-rich-black opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black opacity-90" />
       <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-event-gold opacity-5 blur-3xl" />
       <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-light-gold opacity-5 blur-3xl" />
 
@@ -78,7 +78,7 @@ export function LocationHero({ location }: LocationHeroProps) {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
+          className="max-w-2xl font-inter text-lg md:text-xl text-cream-light/90 mb-8 leading-relaxed"
         >
           {location.description}. With 500+ events delivered and deep expertise in {location.name}'s unique venues and culture, Eventara creates unforgettable celebrations tailored to your vision.
         </motion.p>
@@ -116,19 +116,19 @@ export function LocationHero({ location }: LocationHeroProps) {
               <div className="font-playfair text-3xl font-bold text-event-gold mb-1">
                 {location.elevation}
               </div>
-              <div className="font-inter text-sm text-gray-400">Elevation</div>
+              <div className="font-inter text-sm text-cream-light/70">Elevation</div>
             </div>
             <div>
               <div className="font-playfair text-3xl font-bold text-event-gold mb-1">
                 {location.bestTime}
               </div>
-              <div className="font-inter text-sm text-gray-400">Best Season</div>
+              <div className="font-inter text-sm text-cream-light/70">Best Season</div>
             </div>
             <div>
               <div className="font-playfair text-3xl font-bold text-event-gold mb-1">
                 {location.averageTemp}
               </div>
-              <div className="font-inter text-sm text-gray-400">Avg Temperature</div>
+              <div className="font-inter text-sm text-cream-light/70">Avg Temperature</div>
             </div>
           </div>
         </motion.div>

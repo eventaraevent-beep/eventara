@@ -87,19 +87,19 @@ export function VenuesGrid() {
                   <h3 className="font-playfair text-lg font-bold text-event-gold mb-1">
                     {venue.name}
                   </h3>
-                  <p className="font-inter text-sm text-gray-400">{venue.location}</p>
+                  <p className="font-inter text-sm text-cream-light/70">{venue.location}</p>
                 </div>
                 <span className="text-3xl">🏛️</span>
               </div>
 
               <div className="space-y-3 mb-4">
                 <div>
-                  <p className="font-inter text-xs text-gray-500">Type</p>
-                  <p className="font-inter text-sm text-gray-300">{venue.type}</p>
+                  <p className="font-inter text-xs text-cream-light/50">Type</p>
+                  <p className="font-inter text-sm text-cream-light/90">{venue.type}</p>
                 </div>
                 <div>
-                  <p className="font-inter text-xs text-gray-500">Capacity</p>
-                  <p className="font-inter text-sm text-gray-300">{venue.capacity} guests</p>
+                  <p className="font-inter text-xs text-cream-light/50">Capacity</p>
+                  <p className="font-inter text-sm text-cream-light/90">{venue.capacity} guests</p>
                 </div>
               </div>
 
@@ -107,7 +107,7 @@ export function VenuesGrid() {
                 {venue.features.map((feature, fidx) => (
                   <div key={fidx} className="flex items-center gap-2">
                     <span className="text-light-gold text-xs">✓</span>
-                    <span className="font-inter text-xs text-gray-400">{feature}</span>
+                    <span className="font-inter text-xs text-cream-light/70">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -129,7 +129,7 @@ export function VenuesGrid() {
           <h3 className="font-playfair text-2xl font-bold text-event-gold mb-4">
             Can't Find Your Perfect Venue?
           </h3>
-          <p className="font-inter text-gray-400 mb-6 max-w-2xl mx-auto">
+          <p className="font-inter text-cream-light/70 mb-6 max-w-2xl mx-auto">
             We have access to many more premium venues across the region. Contact us
             to discuss your specific requirements.
           </p>

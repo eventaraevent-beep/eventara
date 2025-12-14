@@ -47,7 +47,7 @@ export function LocationServices({ location }: LocationServicesProps) {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">Complete Services</span> in {location.name}
           </h2>
-          <p className="font-inter text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="font-inter text-cream-light/70 text-lg max-w-2xl mx-auto">
             From wedding planning to corporate events, we offer comprehensive services tailored to {location.name}'s unique charm
           </p>
         </motion.div>
@@ -69,7 +69,7 @@ export function LocationServices({ location }: LocationServicesProps) {
               <h3 className="font-playfair text-2xl font-bold text-event-gold mb-3">
                 {service.display}
               </h3>
-              <p className="font-inter text-gray-400 text-sm mb-6">
+              <p className="font-inter text-cream-light/70 text-sm mb-6">
                 {service.description}
               </p>
               <Link

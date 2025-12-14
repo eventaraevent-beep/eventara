@@ -22,7 +22,7 @@ export function AboutHero() {
 
   return (
     <section className="relative min-h-screen pt-20 flex items-center bg-rich-black overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-gray-900 to-rich-black opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black opacity-90" />
       <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-event-gold opacity-5 blur-3xl" />
 
       <motion.div
@@ -52,7 +52,7 @@ export function AboutHero() {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-xl text-gray-300 mb-8"
+          className="max-w-2xl font-inter text-xl text-cream-light/90 mb-8"
         >
           Eventara has been the trusted partner for luxury event management across
           the Siliguri Corridor and Darjeeling Himalayan region for over 15 years.
@@ -73,7 +73,7 @@ export function AboutHero() {
               <div className="font-playfair text-4xl font-bold text-event-gold mb-2">
                 {stat.number}
               </div>
-              <div className="font-inter text-gray-400 text-sm">{stat.label}</div>
+              <div className="font-inter text-cream-light/70 text-sm">{stat.label}</div>
             </div>
           ))}
         </motion.div>

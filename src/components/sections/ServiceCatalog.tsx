@@ -31,7 +31,7 @@ export function ServiceCatalog() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-rich-black via-gray-900 to-rich-black px-4 md:px-8">
+      <section className="py-20 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black px-4 md:px-8">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}
@@ -46,7 +46,7 @@ export function ServiceCatalog() {
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="font-inter text-lg text-gray-400 mb-8"
+            className="font-inter text-lg text-cream-light/70 mb-8"
           >
             Discover our full range of event management services, from core
             planning to specialized local expertise
@@ -87,7 +87,7 @@ export function ServiceCatalog() {
                       <h3 className="font-playfair text-2xl font-bold text-event-gold mb-3">
                         {service.display}
                       </h3>
-                      <p className="font-inter text-gray-300 mb-4">
+                      <p className="font-inter text-cream-light/90 mb-4">
                         {service.description}
                       </p>
                       {service.highlights && (
@@ -95,7 +95,7 @@ export function ServiceCatalog() {
                           {service.highlights.map((highlight, idx) => (
                             <li
                               key={idx}
-                              className="flex items-center gap-2 text-gray-400 font-inter text-sm"
+                              className="flex items-center gap-2 text-cream-light/70 font-inter text-sm"
                             >
                               <span className="text-light-gold">•</span>
                               {highlight}
@@ -135,7 +135,7 @@ export function ServiceCatalog() {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="font-inter text-gray-300 text-lg mb-8"
+            className="font-inter text-cream-light/90 text-lg mb-8"
           >
             Get in touch with our team to discuss your event needs
           </motion.p>

@@ -30,7 +30,7 @@ export function HomepageHero() {
   return (
     <section className="relative min-h-screen pt-20 w-full overflow-hidden bg-rich-black">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-gray-900 to-rich-black opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black opacity-90" />
       <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-event-gold opacity-5 blur-3xl" />
       <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-light-gold opacity-5 blur-3xl" />
 
@@ -63,7 +63,7 @@ export function HomepageHero() {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
+          className="max-w-2xl font-inter text-lg md:text-xl text-cream-light/90 mb-8 leading-relaxed"
         >
           Eventara has transformed 500+ destination weddings, corporate summits, and luxury events across Darjeeling, Siliguri, and the Northeast. With 15 years of expertise, our award-winning team orchestrates every detail—from pandal artistry to seamless logistics—ensuring your vision becomes an unforgettable reality.
         </motion.p>
@@ -98,7 +98,7 @@ export function HomepageHero() {
 
         <motion.div
           variants={itemVariants}
-          className="mt-8 text-xs text-gray-500 text-center"
+          className="mt-8 text-xs text-cream-light/50 text-center"
         >
           ✓ No Obligation | Free Planning Consultation | 24-Hour Response
         </motion.div>
@@ -117,8 +117,8 @@ export function HomepageHero() {
                 <div className="font-playfair text-3xl font-bold text-event-gold">
                   {stat.label}
                 </div>
-                <div className="font-inter text-sm text-gray-400">{stat.desc}</div>
-                <div className="font-inter text-xs text-gray-500 mt-1">{stat.subtext}</div>
+                <div className="font-inter text-sm text-cream-light/70">{stat.desc}</div>
+                <div className="font-inter text-xs text-cream-light/50 mt-1">{stat.subtext}</div>
               </motion.div>
             ))}
           </div>

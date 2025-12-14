@@ -70,7 +70,7 @@ export function TestimonialSection() {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             Loved by <span className="text-gradient">500+ Happy Couples & Corporations</span>
           </h2>
-          <p className="font-inter text-gray-300 text-lg">
+          <p className="font-inter text-cream-light/90 text-lg">
             Don't just take our word—read stories from clients who've had their dreams delivered
           </p>
         </motion.div>
@@ -101,14 +101,14 @@ export function TestimonialSection() {
                   {testimonial.trust}
                 </span>
               </div>
-              <p className="font-inter text-gray-300 mb-6 italic">
+              <p className="font-inter text-cream-light/90 mb-6 italic">
                 "{testimonial.quote}"
               </p>
               <div>
                 <p className="font-playfair font-bold text-event-gold">
                   {testimonial.name}
                 </p>
-                <p className="font-inter text-sm text-gray-400">
+                <p className="font-inter text-sm text-cream-light/70">
                   {testimonial.event} • {testimonial.location}
                 </p>
               </div>

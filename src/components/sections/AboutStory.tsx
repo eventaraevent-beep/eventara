@@ -21,7 +21,7 @@ export function AboutStory() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-rich-black via-gray-900/30 to-rich-black px-4 md:px-8">
+    <section className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
         <motion.div
           className="grid md:grid-cols-2 gap-12 items-center"
@@ -38,7 +38,7 @@ export function AboutStory() {
               <span className="text-gradient">Our Mission</span>
             </h2>
 
-            <div className="space-y-4 font-inter text-gray-300">
+            <div className="space-y-4 font-inter text-cream-light/90">
               <p>
                 At Eventara, we believe every celebration tells a unique story. Our
                 mission is to transform your vision into an unforgettable reality by
@@ -59,7 +59,7 @@ export function AboutStory() {
               ].map((point, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-3 text-gray-200"
+                  className="flex items-center gap-3 text-cream-light/95"
                 >
                   <div className="w-2 h-2 rounded-full bg-event-gold flex-shrink-0" />
                   <span className="font-inter">{point}</span>
@@ -97,7 +97,7 @@ export function AboutStory() {
                 <h4 className="font-playfair text-lg font-bold text-light-gold mb-2">
                   {item.title}
                 </h4>
-                <p className="font-inter text-gray-400 text-sm">{item.desc}</p>
+                <p className="font-inter text-cream-light/70 text-sm">{item.desc}</p>
               </div>
             ))}
           </motion.div>

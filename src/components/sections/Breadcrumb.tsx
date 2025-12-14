@@ -33,7 +33,7 @@ export function Breadcrumb({
           </Link>
         </li>
 
-        <li className="text-gray-500">/</li>
+        <li className="text-cream-light/50">/</li>
 
         <li>
           <Link
@@ -45,7 +45,7 @@ export function Breadcrumb({
           </Link>
         </li>
 
-        <li className="text-gray-500">/</li>
+        <li className="text-cream-light/50">/</li>
 
         <li className="text-light-gold font-medium" aria-current="page">
           {displayLocation}

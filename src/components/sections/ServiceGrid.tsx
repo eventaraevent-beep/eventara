@@ -33,7 +33,7 @@ export function ServiceGrid() {
   const techServices = SERVICES.filter((s) => s.category === 'tech');
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-rich-black via-gray-900/30 to-rich-black px-4 md:px-8">
+    <section id="services" className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -46,7 +46,7 @@ export function ServiceGrid() {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">Complete Event Solutions</span>
           </h2>
-          <p className="font-inter text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="font-inter text-cream-light/90 text-lg max-w-2xl mx-auto">
             From concept to execution, we handle every detail so you can focus on memories. Our certified planners have orchestrated 500+ events with 98% client satisfaction.
           </p>
         </motion.div>
@@ -142,7 +142,7 @@ function ServiceCard({
       <h3 className="font-playfair text-xl font-bold text-event-gold mb-2">
         {service.display}
       </h3>
-      <p className="font-inter text-gray-400 text-sm mb-4">{service.description}</p>
+      <p className="font-inter text-cream-light/70 text-sm mb-4">{service.description}</p>
       <Link
         href={`/${service.slug}-siliguri`}
         className="inline-flex items-center text-light-gold hover:text-event-gold transition-colors text-sm font-semibold"

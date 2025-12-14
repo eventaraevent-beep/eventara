@@ -52,7 +52,7 @@ export function LocationTestimonials({ location }: LocationTestimonialsProps) {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-rich-black via-gray-900/30 to-rich-black px-4 md:px-8">
+    <section className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -64,7 +64,7 @@ export function LocationTestimonials({ location }: LocationTestimonialsProps) {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             Loved by Clients in <span className="text-gradient">{location.name}</span>
           </h2>
-          <p className="font-inter text-gray-400 text-lg">
+          <p className="font-inter text-cream-light/70 text-lg">
             Real stories from real events in {location.name}
           </p>
         </motion.div>
@@ -90,14 +90,14 @@ export function LocationTestimonials({ location }: LocationTestimonialsProps) {
                   </span>
                 ))}
               </div>
-              <p className="font-inter text-gray-300 mb-6 italic">
+              <p className="font-inter text-cream-light/90 mb-6 italic">
                 "{testimonial.quote}"
               </p>
               <div>
                 <p className="font-playfair font-bold text-event-gold">
                   {testimonial.name}
                 </p>
-                <p className="font-inter text-sm text-gray-400">
+                <p className="font-inter text-sm text-cream-light/70">
                   {testimonial.event}
                 </p>
               </div>

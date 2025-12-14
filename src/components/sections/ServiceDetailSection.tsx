@@ -59,7 +59,7 @@ export function ServiceDetailSection({
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-rich-black via-gray-900/50 to-rich-black px-4 md:px-8">
+    <section className="relative py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/50 to-rich-black px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Main Value Proposition with Emotional Trigger */}
         <motion.div
@@ -79,7 +79,7 @@ export function ServiceDetailSection({
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="font-inter text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed"
+            className="font-inter text-xl text-cream-light/90 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
             {emotionalBenefit}
           </motion.p>
@@ -106,7 +106,7 @@ export function ServiceDetailSection({
                   </div>
                 </div>
                 <div className="flex-1">
-                  <p className="font-inter text-gray-200 leading-relaxed">{benefit}</p>
+                  <p className="font-inter text-cream-light/95 leading-relaxed">{benefit}</p>
                 </div>
               </div>
             </motion.div>
@@ -130,7 +130,7 @@ export function ServiceDetailSection({
                 <div className="font-playfair text-2xl font-bold text-light-gold mb-2">
                   {signal.split(' ')[0]}
                 </div>
-                <p className="font-inter text-sm text-gray-300">
+                <p className="font-inter text-sm text-cream-light/90">
                   {signal.substring(signal.indexOf(' ') + 1)}
                 </p>
               </div>
@@ -152,31 +152,31 @@ export function ServiceDetailSection({
                 Trusted in {location.name}
               </span>
             </h3>
-            <p className="font-inter text-gray-300 text-lg leading-relaxed">
+            <p className="font-inter text-cream-light/90 text-lg leading-relaxed">
               With deep expertise in {location.name}'s unique venues, climate, and local culture, Eventara brings unmatched local knowledge to every {service.display.toLowerCase()} we manage. Our local partnerships and vendor relationships ensure seamless execution.
             </p>
             <div className="space-y-3 pt-4">
               <div className="flex items-center gap-3">
                 <span className="text-light-gold font-bold">✓</span>
-                <span className="font-inter text-gray-200">
+                <span className="font-inter text-cream-light/95">
                   Expert knowledge of {location.name} venues
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-light-gold font-bold">✓</span>
-                <span className="font-inter text-gray-200">
+                <span className="font-inter text-cream-light/95">
                   Premium local vendor partnerships
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-light-gold font-bold">✓</span>
-                <span className="font-inter text-gray-200">
+                <span className="font-inter text-cream-light/95">
                   Weather & terrain expertise
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-light-gold font-bold">✓</span>
-                <span className="font-inter text-gray-200">
+                <span className="font-inter text-cream-light/95">
                   Logistics management from day 1
                 </span>
               </div>
@@ -191,17 +191,17 @@ export function ServiceDetailSection({
             <h4 className="font-playfair text-2xl font-bold text-event-gold mb-4">
               Ready to Plan?
             </h4>
-            <p className="font-inter text-gray-300 mb-6">
+            <p className="font-inter text-cream-light/90 mb-6">
               Get a free consultation to discuss your {service.display.toLowerCase()} needs and how we can create something extraordinary in {location.name}.
             </p>
             <div className="space-y-3 mb-8">
-              <div className="flex items-center gap-2 text-sm text-gray-200">
+              <div className="flex items-center gap-2 text-sm text-cream-light/95">
                 <span>📞</span> <span>24-Hour Response Guarantee</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-200">
+              <div className="flex items-center gap-2 text-sm text-cream-light/95">
                 <span>✓</span> <span>No Obligation Consultation</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-200">
+              <div className="flex items-center gap-2 text-sm text-cream-light/95">
                 <span>⚡</span> <span>Competitive Pricing</span>
               </div>
             </div>
@@ -235,35 +235,35 @@ export function ServiceDetailSection({
           </h3>
           <div className="space-y-4">
             <details className="cursor-pointer group">
-              <summary className="flex items-center gap-3 font-inter font-semibold text-gray-200 hover:text-event-gold transition-colors">
+              <summary className="flex items-center gap-3 font-inter font-semibold text-cream-light/95 hover:text-event-gold transition-colors">
                 <span className="text-light-gold group-open:rotate-90 transition-transform">
                   ▶
                 </span>
                 How far in advance should I book {service.display.toLowerCase()}?
               </summary>
-              <p className="font-inter text-gray-400 mt-3 ml-6">
+              <p className="font-inter text-cream-light/70 mt-3 ml-6">
                 We recommend 3-6 months in advance for optimal selection and planning. However, we can accommodate urgent requests with our rush booking service.
               </p>
             </details>
             <details className="cursor-pointer group">
-              <summary className="flex items-center gap-3 font-inter font-semibold text-gray-200 hover:text-event-gold transition-colors">
+              <summary className="flex items-center gap-3 font-inter font-semibold text-cream-light/95 hover:text-event-gold transition-colors">
                 <span className="text-light-gold group-open:rotate-90 transition-transform">
                   ▶
                 </span>
                 What's included in {service.display.toLowerCase()} pricing?
               </summary>
-              <p className="font-inter text-gray-400 mt-3 ml-6">
+              <p className="font-inter text-cream-light/70 mt-3 ml-6">
                 We provide transparent, all-inclusive pricing. Our quotation includes all services, setup, coordination, and day-of support. No hidden charges.
               </p>
             </details>
             <details className="cursor-pointer group">
-              <summary className="flex items-center gap-3 font-inter font-semibold text-gray-200 hover:text-event-gold transition-colors">
+              <summary className="flex items-center gap-3 font-inter font-semibold text-cream-light/95 hover:text-event-gold transition-colors">
                 <span className="text-light-gold group-open:rotate-90 transition-transform">
                   ▶
                 </span>
                 Can I customize {service.display.toLowerCase()} for my event?
               </summary>
-              <p className="font-inter text-gray-400 mt-3 ml-6">
+              <p className="font-inter text-cream-light/70 mt-3 ml-6">
                 Absolutely! All our services are fully customizable to match your vision, budget, and preferences. We work closely with you to create exactly what you need.
               </p>
             </details>

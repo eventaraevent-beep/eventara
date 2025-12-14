@@ -57,7 +57,7 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-rich-black via-gray-900/30 to-rich-black px-4 md:px-8">
+    <section className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
@@ -70,7 +70,7 @@ export function FAQSection() {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">FAQ</span>
           </h2>
-          <p className="font-inter text-gray-400 text-lg">
+          <p className="font-inter text-cream-light/70 text-lg">
             Common questions answered
           </p>
         </motion.div>
@@ -123,7 +123,7 @@ export function FAQSection() {
                   exit={{ opacity: 0, height: 0 }}
                   className="px-6 pb-6 border-t border-event-gold/20"
                 >
-                  <p className="font-inter text-gray-400">{faq.a}</p>
+                  <p className="font-inter text-cream-light/70">{faq.a}</p>
                 </motion.div>
               )}
             </motion.div>
@@ -138,7 +138,7 @@ export function FAQSection() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <p className="font-inter text-gray-400 mb-4">
+          <p className="font-inter text-cream-light/70 mb-4">
             Didn't find your answer?
           </p>
           <a

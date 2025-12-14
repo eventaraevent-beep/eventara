@@ -56,7 +56,7 @@ export function ContactPageContent() {
   return (
     <div className="pt-20 pb-20">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-rich-black via-gray-900 to-rich-black px-4 md:px-8">
+      <section className="py-20 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black px-4 md:px-8">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}
@@ -71,7 +71,7 @@ export function ContactPageContent() {
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="font-inter text-lg text-gray-400"
+            className="font-inter text-lg text-cream-light/70"
           >
             Reach out to our team and let's discuss your event vision
           </motion.p>
@@ -133,13 +133,13 @@ export function ContactPageContent() {
                     {contact.title}
                   </h3>
                   {contact.href.startsWith('#') ? (
-                    <p className="font-inter text-gray-300">{contact.value}</p>
+                    <p className="font-inter text-cream-light/90">{contact.value}</p>
                   ) : (
                     <a
                       href={contact.href}
                       target={contact.href.startsWith('http') ? '_blank' : '_self'}
                       rel={contact.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                      className="font-inter text-gray-300 hover:text-light-gold transition-colors"
+                      className="font-inter text-cream-light/90 hover:text-light-gold transition-colors"
                     >
                       {contact.value}
                     </a>
@@ -158,7 +158,7 @@ export function ContactPageContent() {
               </h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2">
+                  <label className="block font-inter text-sm text-cream-light/90 mb-2">
                     Name
                   </label>
                   <input
@@ -168,13 +168,13 @@ export function ContactPageContent() {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-cream-light focus:outline-none focus:border-event-gold transition-colors"
                     placeholder="Your name"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2">
+                  <label className="block font-inter text-sm text-cream-light/90 mb-2">
                     Email
                   </label>
                   <input
@@ -184,13 +184,13 @@ export function ContactPageContent() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-cream-light focus:outline-none focus:border-event-gold transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2">
+                  <label className="block font-inter text-sm text-cream-light/90 mb-2">
                     Phone
                   </label>
                   <input
@@ -200,13 +200,13 @@ export function ContactPageContent() {
                     onChange={(e) =>
                       setFormData({ ...formData, phone: e.target.value })
                     }
-                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-cream-light focus:outline-none focus:border-event-gold transition-colors"
                     placeholder="+91 XXXXX XXXXX"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2" htmlFor="event-type">
+                  <label className="block font-inter text-sm text-cream-light/90 mb-2" htmlFor="event-type">
                     Event Type
                   </label>
                   <select
@@ -216,7 +216,7 @@ export function ContactPageContent() {
                     onChange={(e) =>
                       setFormData({ ...formData, eventType: e.target.value })
                     }
-                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-cream-light focus:outline-none focus:border-event-gold transition-colors"
                     aria-label="Event type"
                   >
                     <option value="">Select event type</option>
@@ -228,7 +228,7 @@ export function ContactPageContent() {
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2" htmlFor="location">
+                  <label className="block font-inter text-sm text-cream-light/90 mb-2" htmlFor="location">
                     Location
                   </label>
                   <select
@@ -238,7 +238,7 @@ export function ContactPageContent() {
                     onChange={(e) =>
                       setFormData({ ...formData, location: e.target.value })
                     }
-                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-cream-light focus:outline-none focus:border-event-gold transition-colors"
                     aria-label="Location"
                   >
                     <option value="">Select location</option>
@@ -253,7 +253,7 @@ export function ContactPageContent() {
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2">
+                  <label className="block font-inter text-sm text-cream-light/90 mb-2">
                     Message
                   </label>
                   <textarea
@@ -261,7 +261,7 @@ export function ContactPageContent() {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors resize-none h-24"
+                    className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-cream-light focus:outline-none focus:border-event-gold transition-colors resize-none h-24"
                     placeholder="Tell us about your event..."
                   />
                 </div>

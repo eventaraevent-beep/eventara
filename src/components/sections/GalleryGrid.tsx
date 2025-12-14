@@ -63,7 +63,7 @@ export function GalleryGrid() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <p className="font-inter text-gray-400 mb-4">
+          <p className="font-inter text-cream-light/70 mb-4">
             View more events on our social media
           </p>
           <div className="flex justify-center gap-4">

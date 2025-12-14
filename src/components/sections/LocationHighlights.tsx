@@ -46,7 +46,7 @@ export function LocationHighlights({ location }: LocationHighlightsProps) {
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
             Discover <span className="text-event-gold">{location.name}</span>
           </h2>
-          <p className="font-inter text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="font-inter text-cream-light/70 text-lg max-w-2xl mx-auto">
             {location.description}
           </p>
         </motion.div>
@@ -67,8 +67,8 @@ export function LocationHighlights({ location }: LocationHighlightsProps) {
             <div className="text-event-gold text-4xl font-bold mb-2">
               {location.elevation}
             </div>
-            <div className="font-inter text-gray-300 mb-2">Elevation</div>
-            <p className="font-inter text-sm text-gray-400">
+            <div className="font-inter text-cream-light/90 mb-2">Elevation</div>
+            <p className="font-inter text-sm text-cream-light/70">
               Altitude and climate characteristics
             </p>
           </motion.div>
@@ -82,8 +82,8 @@ export function LocationHighlights({ location }: LocationHighlightsProps) {
               {location.coordinates.lat.toFixed(3)}° N<br />
               {location.coordinates.lng.toFixed(3)}° E
             </div>
-            <div className="font-inter text-gray-300 mb-2">Coordinates</div>
-            <p className="font-inter text-sm text-gray-400">
+            <div className="font-inter text-cream-light/90 mb-2">Coordinates</div>
+            <p className="font-inter text-sm text-cream-light/70">
               Geographic location for logistics
             </p>
           </motion.div>
@@ -96,8 +96,8 @@ export function LocationHighlights({ location }: LocationHighlightsProps) {
             <div className="text-event-gold font-playfair text-2xl font-bold mb-2">
               ★★★★★
             </div>
-            <div className="font-inter text-gray-300 mb-2">Destination Rating</div>
-            <p className="font-inter text-sm text-gray-400">
+            <div className="font-inter text-cream-light/90 mb-2">Destination Rating</div>
+            <p className="font-inter text-sm text-cream-light/70">
               Premium venue availability
             </p>
           </motion.div>
@@ -150,7 +150,7 @@ export function LocationHighlights({ location }: LocationHighlightsProps) {
                 <h4 className="font-playfair text-xl font-bold text-light-gold">
                   {item.title}
                 </h4>
-                <p className="font-inter text-gray-300">{item.desc}</p>
+                <p className="font-inter text-cream-light/90">{item.desc}</p>
               </motion.div>
             ))}
           </div>

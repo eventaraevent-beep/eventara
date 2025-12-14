@@ -28,7 +28,7 @@ export function CTASection({
   };
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-rich-black via-gray-900 to-rich-black px-4 md:px-8 overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-b from-rich-black via-burgundy-dark to-rich-black px-4 md:px-8 overflow-hidden">
       {/* Accent Blurs */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-event-gold opacity-5 blur-3xl rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-light-gold opacity-5 blur-3xl rounded-full" />
@@ -45,7 +45,7 @@ export function CTASection({
           Ready to Plan Your Perfect Event?
         </h2>
 
-        <p className="font-inter text-lg text-gray-300 max-w-2xl mx-auto">
+        <p className="font-inter text-lg text-cream-light/90 max-w-2xl mx-auto">
           Let Eventara bring your vision to life. Our expert team is ready to
           discuss your {service.display.toLowerCase()} in {location.name}.
         </p>
@@ -102,7 +102,7 @@ export function CTASection({
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <p className="font-inter text-sm text-gray-400 mb-6">
+          <p className="font-inter text-sm text-cream-light/70 mb-6">
             Trusted by 500+ events across the Darjeeling Corridor
           </p>
           <div className="flex justify-center items-center gap-8 flex-wrap">
@@ -110,7 +110,7 @@ export function CTASection({
               (badge, idx) => (
                 <div
                   key={idx}
-                  className="text-center font-inter text-sm text-gray-300"
+                  className="text-center font-inter text-sm text-cream-light/90"
                 >
                   <div className="text-event-gold font-bold text-lg">#</div>
                   {badge}

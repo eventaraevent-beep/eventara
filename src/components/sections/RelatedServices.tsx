@@ -52,7 +52,7 @@ export function RelatedServices({
                   <h3 className="text-gold group-hover:text-light-gold font-semibold">
                     {service.display}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-1">
+                  <p className="text-cream-light/70 text-sm mt-1">
                     in {currentLocationData.display}
                   </p>
                 </Link>
@@ -78,7 +78,7 @@ export function RelatedServices({
                   <h3 className="text-gold group-hover:text-light-gold font-semibold">
                     {currentServiceData.display}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-1">{location.display}</p>
+                  <p className="text-cream-light/70 text-sm mt-1">{location.display}</p>
                 </Link>
               ))}
             </div>

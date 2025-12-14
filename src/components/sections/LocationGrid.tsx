@@ -42,7 +42,7 @@ export function LocationGrid() {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             Serve Across <span className="text-gradient">7 Regions</span>
           </h2>
-          <p className="font-inter text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="font-inter text-cream-light/70 text-lg max-w-2xl mx-auto">
             From the foothills of Darjeeling to the bustling corridors of Siliguri
           </p>
         </motion.div>
@@ -86,8 +86,8 @@ function LocationCard({
         {location.name}
       </h3>
       <div className="space-y-2 mb-4">
-        <p className="font-inter text-sm text-gray-400">{location.description}</p>
-        <p className="font-inter text-xs text-gray-500">
+        <p className="font-inter text-sm text-cream-light/70">{location.description}</p>
+        <p className="font-inter text-xs text-cream-light/50">
           Elevation: {location.elevation}
         </p>
       </div>

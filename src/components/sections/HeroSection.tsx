@@ -43,7 +43,7 @@ export function HeroSection({
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-rich-black">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-gray-900 to-rich-black opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black opacity-90" />
 
       {/* Animated Accent */}
       <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-event-gold opacity-5 blur-3xl" />
@@ -76,13 +76,13 @@ export function HeroSection({
             Luxury {service.display}
           </span>
           <br />
-          <span className="text-gray-300">in {location.name}</span>
+          <span className="text-cream-light/90">in {location.name}</span>
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-lg md:text-xl text-gray-400 mb-12"
+          className="max-w-2xl font-inter text-lg md:text-xl text-cream-light/70 mb-12"
         >
           {subtitle}
         </motion.p>
@@ -110,7 +110,7 @@ export function HeroSection({
             transition={{ duration: 2, repeat: Infinity }}
             className="flex flex-col items-center gap-2"
           >
-            <span className="text-sm text-gray-500 font-inter">Scroll to explore</span>
+            <span className="text-sm text-cream-light/50 font-inter">Scroll to explore</span>
             <svg
               className="w-5 h-5 text-event-gold"
               fill="none"

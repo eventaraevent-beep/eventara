@@ -73,7 +73,7 @@ export function LocationFAQ({ location }: LocationFAQProps) {
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
             Questions About Events in <span className="text-gradient">{location.name}</span>?
           </h2>
-          <p className="font-inter text-gray-400 text-lg">
+          <p className="font-inter text-cream-light/70 text-lg">
             Get answers from our {location.name} event experts
           </p>
         </motion.div>
@@ -109,7 +109,7 @@ export function LocationFAQ({ location }: LocationFAQProps) {
                   transition={{ duration: 0.3 }}
                   className="px-6 py-4 bg-gray-900/50 border-l-2 border-event-gold/30"
                 >
-                  <p className="font-inter text-gray-300 leading-relaxed">
+                  <p className="font-inter text-cream-light/90 leading-relaxed">
                     {faq.a}
                   </p>
                 </motion.div>
@@ -126,7 +126,7 @@ export function LocationFAQ({ location }: LocationFAQProps) {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p className="font-inter text-gray-400 mb-6">
+          <p className="font-inter text-cream-light/70 mb-6">
             Still have questions about hosting an event in {location.name}?
           </p>
           <a

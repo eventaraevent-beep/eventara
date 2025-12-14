@@ -56,7 +56,7 @@ export function TeamSection() {
           <h2 className="font-playfair text-5xl font-bold mb-4">
             Meet Our <span className="text-gradient">Expert Team</span>
           </h2>
-          <p className="font-inter text-gray-400 text-lg">
+          <p className="font-inter text-cream-light/70 text-lg">
             Dedicated professionals committed to excellence
           </p>
         </motion.div>
@@ -83,7 +83,7 @@ export function TeamSection() {
               <p className="font-inter text-sm text-light-gold mb-3">
                 {member.role}
               </p>
-              <p className="font-inter text-xs text-gray-400">{member.bio}</p>
+              <p className="font-inter text-xs text-cream-light/70">{member.bio}</p>
             </motion.div>
           ))}
         </motion.div>
