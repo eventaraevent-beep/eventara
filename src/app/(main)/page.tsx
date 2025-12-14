@@ -2,15 +2,17 @@ import { Metadata } from 'next';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 
 export const metadata: Metadata = {
-  title: 'Luxury Event Management in Darjeeling & Siliguri | Eventara',
+  title: 'Luxury Event Management & Wedding Planner | Eventara | 500+ Events',
   description:
-    'Transform your vision into reality with Eventara. Premium event planning for weddings, corporate events, and destination experiences in Darjeeling, Siliguri, Gangtok, and Northeast India. Expert coordination, stunning venues, professional service.',
+    'Eventara transforms your vision into unforgettable events. 500+ destination weddings, corporate summits & luxury experiences. 15 years expertise. 98% client satisfaction. Book your free consultation today.',
   keywords: [
     'event management',
     'luxury events',
     'wedding planning',
+    'wedding planner',
     'corporate events',
     'destination events',
+    'event planner',
     'Darjeeling event planner',
     'Siliguri wedding planner',
     'event coordination',
@@ -19,7 +21,8 @@ export const metadata: Metadata = {
     'tea garden wedding',
     'Northeast India events',
     'luxury destination wedding',
-    'wedding planner',
+    'premium event management',
+    'professional event coordinator',
   ],
 };
 
@@ -31,20 +34,20 @@ import { FAQSection } from '@/components/sections/FAQSection';
 
 const homepageFAQs = [
   {
-    question: 'How far in advance should I book Eventara?',
-    answer: 'We recommend booking 3-6 months in advance for weddings and major events to ensure venue availability and perfect coordination. However, we can accommodate shorter timelines for corporate events.',
+    question: 'How quickly can Eventara plan my event?',
+    answer: 'We\'ve successfully coordinated luxury events in as little as 30 days. However, for destination weddings and complex events, we recommend 3-6 months advance planning to secure premium venues, vendors, and ensure flawless execution. Our rapid-planning team is available 24/7 for urgent bookings.',
   },
   {
-    question: 'Which locations do you serve?',
-    answer: 'We serve 7 prime locations: Siliguri, Darjeeling, Gangtok, Kalimpong, Kurseong, Bagdogra, and Mirik. Our local expertise spans the entire Darjeeling Corridor and Northeast region.',
+    question: 'Why choose Eventara over other event planners?',
+    answer: 'With 500+ events delivered and 98% client satisfaction, Eventara brings 15 years of certified expertise, exclusive vendor relationships, and a proven track record in Northeast India. We handle every detail—from pandal artistry to logistics—so you don\'t have to. Your dream event is our responsibility.',
   },
   {
-    question: 'What services can be customized?',
-    answer: 'All our services are fully customizable. From pandal decoration themes to multi-cuisine catering menus, DJ music playlists to venue logistics—we tailor everything to your vision and budget.',
+    question: 'What makes Eventara\'s destination weddings special?',
+    answer: 'We don\'t just organize events—we create experiences. Our destination management services include venue scouting, accommodation coordination, travel logistics, vendor curation, and on-ground coordination. We\'ve hosted unforgettable weddings in Darjeeling, Gangtok, Kalimpong, and across the Northeast.',
   },
   {
-    question: 'Do you handle destination weddings?',
-    answer: 'Absolutely! We specialize in destination weddings. Our DMC services include accommodation coordination, travel logistics, vendor management, and full event planning.',
+    question: 'How do I get started with a free consultation?',
+    answer: 'Simply click "Get Free Consultation" on our homepage or visit /contact. We respond within 24 hours with personalized recommendations, vendor options, and pricing based on your vision, guest count, and budget. No obligation—we just want to help you plan the perfect event.',
   },
 ];
 

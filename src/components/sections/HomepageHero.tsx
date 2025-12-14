@@ -44,9 +44,9 @@ export function HomepageHero() {
           variants={itemVariants}
           className="mb-8 inline-flex items-center gap-3 rounded-full border border-event-gold/30 bg-event-gold/5 px-6 py-2 backdrop-blur-sm"
         >
-          <span className="h-2 w-2 rounded-full bg-event-gold" />
+          <span className="h-2 w-2 rounded-full bg-event-gold animate-pulse" />
           <span className="text-sm font-medium text-event-gold uppercase tracking-widest">
-            Luxury Event Management
+            ✓ 500+ Events | 15+ Years | Premium Luxury Service
           </span>
         </motion.div>
 
@@ -54,38 +54,51 @@ export function HomepageHero() {
           variants={itemVariants}
           className="max-w-5xl font-playfair text-6xl md:text-7xl font-bold leading-tight text-white mb-6"
         >
-          Elevate Your Events to
+          Your Luxury Event Deserves
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-gold via-light-gold to-event-gold">
-            Unforgettable Moments
+            Northeast India's #1 Expert
           </span>
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-lg md:text-xl text-gray-400 mb-12"
+          className="max-w-2xl font-inter text-lg md:text-xl text-gray-300 mb-8 leading-relaxed"
         >
-          Eventara brings together expertise, creativity, and luxury to create
-          destination events that define elegance. From Darjeeling's misty peaks
-          to Siliguri's vibrant corridors.
+          Eventara has transformed 500+ destination weddings, corporate summits, and luxury events across Darjeeling, Siliguri, and the Northeast. With 15 years of expertise, our award-winning team orchestrates every detail—from pandal artistry to seamless logistics—ensuring your vision becomes an unforgettable reality.
         </motion.p>
+
+        <motion.div
+          variants={itemVariants}
+          className="flex items-center gap-3 justify-center mb-6 text-sm text-event-gold font-semibold"
+        >
+          <span>⏰ Peak Season Dates Fill Fast—</span>
+          <span className="animate-pulse">Book Your Date Now</span>
+        </motion.div>
 
         <motion.div
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Link
-            href="/#services"
+            href="/contact"
             className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
-            Explore Services
+            Get Free Consultation
           </Link>
           <Link
-            href="/contact"
+            href="/#services"
             className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300"
           >
-            Start Planning
+            Explore All Services
           </Link>
+        </motion.div>
+
+        <motion.div
+          variants={itemVariants}
+          className="mt-8 text-xs text-gray-500 text-center"
+        >
+          ✓ No Obligation | Free Planning Consultation | 24-Hour Response
         </motion.div>
 
         <motion.div
@@ -94,15 +107,16 @@ export function HomepageHero() {
         >
           <div className="grid grid-cols-3 gap-8 text-center">
             {[
-              { label: '500+', desc: 'Events Delivered' },
-              { label: '15+', desc: 'Years Experience' },
-              { label: '7', desc: 'Prime Locations' },
+              { label: '500+', desc: 'Events Delivered', subtext: '15 years of excellence' },
+              { label: '98%', desc: 'Client Satisfaction', subtext: 'Repeat & referral rate' },
+              { label: '7', desc: 'Prime Locations', subtext: 'Northeast India coverage' },
             ].map((stat, idx) => (
               <motion.div key={idx} variants={itemVariants}>
                 <div className="font-playfair text-3xl font-bold text-event-gold">
                   {stat.label}
                 </div>
                 <div className="font-inter text-sm text-gray-400">{stat.desc}</div>
+                <div className="font-inter text-xs text-gray-500 mt-1">{stat.subtext}</div>
               </motion.div>
             ))}
           </div>

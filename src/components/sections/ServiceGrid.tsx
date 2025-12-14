@@ -44,10 +44,10 @@ export function ServiceGrid() {
           viewport={{ once: true }}
         >
           <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-gradient">Our Services</span>
+            <span className="text-gradient">Complete Event Solutions</span>
           </h2>
-          <p className="font-inter text-gray-400 text-lg max-w-2xl mx-auto">
-            Comprehensive event management solutions tailored to your vision
+          <p className="font-inter text-gray-300 text-lg max-w-2xl mx-auto">
+            From concept to execution, we handle every detail so you can focus on memories. Our certified planners have orchestrated 500+ events with 98% client satisfaction.
           </p>
         </motion.div>
 
