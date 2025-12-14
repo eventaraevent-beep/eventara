@@ -83,7 +83,8 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
         {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
-        <meta name="theme-color" content="#3A0D16" />
+        <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+        <meta name="theme-color" content="#D4AF37" media="(prefers-color-scheme: light)" />
         <meta name="color-scheme" content="dark" />
         
         {/* Canonical URL */}
