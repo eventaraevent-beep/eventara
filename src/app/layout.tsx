@@ -63,6 +63,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} scroll-smooth`}
     >
       <head>
+        {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
         <meta name="theme-color" content="#0a0a0a" />
         <meta name="color-scheme" content="dark" />
         {/* Canonical URL */}
