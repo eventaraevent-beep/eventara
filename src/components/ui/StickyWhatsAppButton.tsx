@@ -1,21 +1,53 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 /**
  * Sticky WhatsApp Button for Mobile
- * Appears on bottom-right on mobile devices only
- * Improves mobile conversion by 20-30%
+ * Smart positioning to avoid footer overlap
+ * Only shows on mobile devices
  */
 
 export function StickyWhatsAppButton() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    // Check if device is mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    // Handle scroll to show/hide button
+    const handleScroll = () => {
+      // Always show on mobile
+      setIsVisible(true);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleWhatsAppClick = () => {
     // Track GA4 event
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'button_click', {
         button_name: 'sticky_whatsapp',
-        device_type: window.innerWidth < 768 ? 'mobile' : 'desktop',
+        device_type: 'mobile',
       });
     }
   };
+
+  if (!isMobile || !isVisible) {
+    return null;
+  }
 
   return (
     <a
@@ -23,12 +55,12 @@ export function StickyWhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleWhatsAppClick}
-      className="fixed bottom-8 right-4 sm:bottom-10 sm:right-6 md:hidden z-40 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-event-gold to-light-gold text-rich-black rounded-full shadow-2xl hover:shadow-2xl hover:scale-110 transition-all duration-300 group active:scale-95"
+      className="fixed bottom-24 right-4 md:hidden z-50 flex items-center justify-center w-14 h-14 bg-gradient-to-br from-event-gold to-light-gold text-rich-black rounded-full shadow-2xl hover:shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce"
       title="Chat on WhatsApp"
       aria-label="Chat on WhatsApp"
     >
       <svg
-        className="w-6 h-6 sm:w-7 sm:h-7 group-hover:scale-125 transition-transform duration-300"
+        className="w-7 h-7 transition-transform duration-300"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
@@ -37,3 +69,4 @@ export function StickyWhatsAppButton() {
     </a>
   );
 }
+

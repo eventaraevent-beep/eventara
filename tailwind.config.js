@@ -17,6 +17,15 @@ module.exports = {
         playfair: ['var(--font-playfair)', 'serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
       },
+      animation: {
+        bounce: 'bounce 2s infinite',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-0.5rem)' },
+        },
+      },
     },
   },
   plugins: [],
