@@ -28,7 +28,7 @@ export function AwardsSection() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-900/30 via-rich-black to-gray-900/30 px-3 sm:px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-burgundy-dark/30 via-rich-black to-burgundy-dark/30 px-3 sm:px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -37,7 +37,7 @@ export function AwardsSection() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="font-playfair text-5xl font-bold mb-4">
+          <h2 className="font-playfair text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
             Awards & <span className="text-gradient">Recognition</span>
           </h2>
         </motion.div>
@@ -53,9 +53,9 @@ export function AwardsSection() {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="card-luxury p-8 flex items-center gap-4"
+              className="card-luxury p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row items-center gap-3 sm:gap-4"
             >
-              <div className="text-4xl">🏆</div>
+              <div className="text-3xl sm:text-4xl flex-shrink-0">🏆</div>
               <div>
                 <p className="font-inter font-semibold text-event-gold">{award}</p>
               </div>

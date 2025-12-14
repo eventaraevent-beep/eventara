@@ -52,7 +52,7 @@ export function HomepageHero() {
 
         <motion.h1
           variants={itemVariants}
-          className="max-w-5xl font-playfair text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-bold leading-tight text-white mb-6"
+          className="max-w-5xl font-playfair text-2xl sm:text-4xl md:text-7xl font-bold leading-tight text-white mb-4 sm:mb-6"
         >
           Your Luxury Event Deserves
           <br />
@@ -63,7 +63,7 @@ export function HomepageHero() {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-sm sm:text-base md:text-lg lg:text-sm sm:text-base md:text-xl text-cream-light/90 mb-8 leading-relaxed"
+          className="max-w-2xl font-inter text-xs sm:text-sm md:text-base lg:text-lg text-cream-light/90 mb-6 sm:mb-8 leading-relaxed"
         >
           Eventara has transformed 500+ destination weddings, corporate summits, and luxury events across Darjeeling, Siliguri, and the Northeast. With 15 years of expertise, our award-winning team orchestrates every detail—from pandal artistry to seamless logistics—ensuring your vision becomes an unforgettable reality.
         </motion.p>
@@ -107,7 +107,7 @@ export function HomepageHero() {
           variants={itemVariants}
           className="mt-8 sm:mt-16 pt-6 sm:pt-8 border-t border-event-gold/20 w-full max-w-2xl"
         >
-          <div className="grid grid-cols-3 gap-4 sm:gap-4 sm:gap-6 md:gap-8 text-center">
+          <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 text-center">
             {[
               { label: '500+', desc: 'Events Delivered', subtext: '15 years of excellence' },
               { label: '98%', desc: 'Client Satisfaction', subtext: 'Repeat & referral rate' },
