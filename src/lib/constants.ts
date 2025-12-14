@@ -207,6 +207,15 @@ export const SERVICES = [
       'complete wedding service',
     ],
     vernacular: ['Shaadi Planner', 'Vivah Vibhag', 'Vivah Niyojan'],
+    emotionalBenefit: 'Your perfect day, stress-free and stunning—from your first dream to your last dance.',
+    benefits: [
+      'Complete stress-free planning with dedicated team',
+      'Personalized service tailored to your vision',
+      'Access to premium vendor network',
+      'Day-of coordination with full support',
+      'Budget management and transparent pricing',
+    ],
+    trustSignals: ['500+ weddings delivered', '15+ years of excellence', '98% client satisfaction', 'Award-winning planner'],
   },
   {
     slug: 'corporate-events',
@@ -229,6 +238,15 @@ export const SERVICES = [
       'award ceremony',
     ],
     vernacular: ['Vyavasay Anushthan', 'Corporate Events'],
+    emotionalBenefit: 'Impress clients, energize teams, and create memorable business moments that strengthen relationships.',
+    benefits: [
+      'Professional event execution with flawless logistics',
+      'Expert vendor management and coordination',
+      'Customized themes for brand alignment',
+      'Full technical support and contingency planning',
+      'Post-event analytics and attendee feedback',
+    ],
+    trustSignals: ['150+ corporate events', 'Fortune 500 companies trust us', 'Zero event cancellations', 'Certified event managers'],
   },
   {
     slug: 'destination-management',
@@ -251,6 +269,15 @@ export const SERVICES = [
       'group accommodation',
     ],
     vernacular: ['Gantavya Prabandhan', 'Destination Services'],
+    emotionalBenefit: 'Transform distant dreams into seamless realities—travel, stay, and celebrate worry-free in stunning locations.',
+    benefits: [
+      'Complete travel logistics and ground support',
+      'Exclusive access to premium hotels and resorts',
+      'Local expert guides and destination knowledge',
+      'Group accommodation and rate negotiations',
+      'On-site 24/7 emergency support',
+    ],
+    trustSignals: ['200+ destination events', 'Partners with 50+ hotels', 'Seamless multi-country coordination', 'Expert destination knowledge'],
   },
 
   // VERNACULAR SERVICES (HIGH PRIORITY)

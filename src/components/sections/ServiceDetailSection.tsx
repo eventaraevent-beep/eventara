@@ -1,12 +1,13 @@
 'use client';
 
 /**
- * Service Detail Section
- * Dynamically rendered based on service type
+ * Service Detail Section - Enhanced for Conversion
+ * Dynamically rendered based on service type with emotional triggers and CTAs
  */
 
 import { LOCATIONS, SERVICES } from '@/lib/constants';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface ServiceDetailSectionProps {
   service: (typeof SERVICES)[0];
@@ -37,177 +38,236 @@ export function ServiceDetailSection({
     },
   };
 
-  // Conditional content based on service type
-  const getServiceContent = () => {
-    switch (service.slug) {
-      case 'pandal-decoration':
-        return {
-          heading: 'Waterproof Structures & Thematic Design',
-          highlights: [
-            'Weather-resistant materials',
-            'Custom structural design',
-            'Theme-based aesthetics',
-            'Quick installation & dismantling',
-          ],
-          description:
-            'Our pandal decoration services create stunning temporary structures that are both beautiful and durable. We specialize in custom designs that match your event theme while ensuring protection from weather elements.',
-        };
-      case 'wedding-planner':
-        return {
-          heading: 'Complete Destination Wedding Management',
-          highlights: [
-            'Hotel coordination & logistics',
-            'Guest accommodation management',
-            'Multi-day event planning',
-            'Vendor coordination',
-          ],
-          description:
-            'From concept to celebration, we handle every detail of your destination wedding. Our comprehensive planning includes venue selection, vendor management, and seamless day-of coordination.',
-        };
-      case 'floral-decor':
-        return {
-          heading: 'Luxury Floral Arrangements & Design',
-          highlights: [
-            'Fresh seasonal flowers',
-            'Custom backdrop designs',
-            'Bridal bouquet creation',
-            'Theme-based florals',
-          ],
-          description:
-            'Elevate your event with our exquisite floral designs. We source premium flowers and create stunning arrangements that transform your venue into a botanical paradise.',
-        };
-      case 'catering':
-        return {
-          heading: 'Multi-Cuisine Gourmet Catering',
-          highlights: [
-            'Traditional & modern cuisines',
-            'Kulhar tea & street food stations',
-            'Gourmet dining experiences',
-            'Dietary accommodations',
-          ],
-          description:
-            'Our catering service offers a culinary journey from traditional Kulhar tea to gourmet dining. We handle everything from menu planning to service, ensuring your guests enjoy an unforgettable meal.',
-        };
-      case 'dj-sound-system':
-        return {
-          heading: 'Professional DJ & Audio Management',
-          highlights: [
-            'State-of-the-art equipment',
-            'Professional sound engineering',
-            'Music curation & mixing',
-            'Live entertainment setup',
-          ],
-          description:
-            'Set the perfect mood with our professional DJ services. We provide high-quality sound systems and experienced DJs who understand how to energize your crowd.',
-        };
-      default:
-        return {
-          heading: service.display,
-          highlights: service.highlights || [
-            'Professional expertise',
-            'Quality service',
-            'Custom solutions',
-            'Client satisfaction',
-          ],
-          description: service.description,
-        };
-    }
-  };
+  // Get benefits - use service object if available, otherwise generate defaults
+  const benefits = (service as any).benefits || [
+    'Professional expertise',
+    'Quality service',
+    'Custom solutions',
+    'Client satisfaction',
+  ];
 
-  const content = getServiceContent();
+  // Get emotional benefit copy
+  const emotionalBenefit = (service as any).emotionalBenefit || 
+    `Transform your ${service.display.toLowerCase()} into an unforgettable experience with our expert services.`;
+
+  // Get trust signals
+  const trustSignals = (service as any).trustSignals || [
+    '500+ events delivered',
+    '15+ years of excellence',
+    '98% client satisfaction',
+    'Award-winning service',
+  ];
 
   return (
     <section className="relative py-20 bg-gradient-to-b from-rich-black via-gray-900/50 to-rich-black px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
+        {/* Main Value Proposition with Emotional Trigger */}
         <motion.div
-          className="grid md:grid-cols-2 gap-12 items-center"
+          className="text-center mb-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
         >
-          {/* Left: Content */}
+          <motion.h2
+            variants={itemVariants}
+            className="font-playfair text-5xl md:text-6xl font-bold mb-6"
+          >
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-gold via-light-gold to-event-gold">
+              {service.display}
+            </span>
+          </motion.h2>
+          <motion.p
+            variants={itemVariants}
+            className="font-inter text-xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed"
+          >
+            {emotionalBenefit}
+          </motion.p>
+        </motion.div>
+
+        {/* Benefits Grid */}
+        <motion.div
+          className="grid md:grid-cols-3 gap-6 mb-16"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+        >
+          {benefits.map((benefit: string, idx: number) => (
+            <motion.div
+              key={idx}
+              variants={itemVariants}
+              className="card-luxury p-8 hover:border-event-gold/60 transition-all"
+            >
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-event-gold/20 flex items-center justify-center">
+                    <span className="text-event-gold font-bold text-lg">✓</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <p className="font-inter text-gray-200 leading-relaxed">{benefit}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Trust Signals Section */}
+        <motion.div
+          className="bg-gradient-to-r from-event-gold/10 via-light-gold/5 to-event-gold/10 border border-event-gold/20 rounded-xl p-8 md:p-12 mb-16"
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+        >
+          <h3 className="font-playfair text-3xl font-bold text-event-gold mb-8 text-center">
+            Why Couples & Corporations Choose Eventara
+          </h3>
+          <div className="grid md:grid-cols-4 gap-6">
+            {trustSignals.map((signal: string, idx: number) => (
+              <div key={idx} className="text-center">
+                <div className="font-playfair text-2xl font-bold text-light-gold mb-2">
+                  {signal.split(' ')[0]}
+                </div>
+                <p className="font-inter text-sm text-gray-300">
+                  {signal.substring(signal.indexOf(' ') + 1)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Local Expertise + CTA Section */}
+        <motion.div
+          className="grid md:grid-cols-2 gap-12 items-center mb-16"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+        >
           <motion.div variants={itemVariants} className="space-y-6">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold">
+            <h3 className="font-playfair text-4xl font-bold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-gold to-light-gold">
-                {content.heading}
+                Trusted in {location.name}
               </span>
-            </h2>
-
+            </h3>
             <p className="font-inter text-gray-300 text-lg leading-relaxed">
-              {content.description}
+              With deep expertise in {location.name}'s unique venues, climate, and local culture, Eventara brings unmatched local knowledge to every {service.display.toLowerCase()} we manage. Our local partnerships and vendor relationships ensure seamless execution.
             </p>
-
-            {/* Highlights */}
-            <div className="space-y-4 pt-4">
-              {content.highlights.map((highlight, idx) => (
-                <motion.div
-                  key={idx}
-                  variants={itemVariants}
-                  className="flex items-center gap-3 text-gray-200"
-                >
-                  <div className="w-2 h-2 rounded-full bg-event-gold flex-shrink-0" />
-                  <span className="font-inter">{highlight}</span>
-                </motion.div>
-              ))}
+            <div className="space-y-3 pt-4">
+              <div className="flex items-center gap-3">
+                <span className="text-light-gold font-bold">✓</span>
+                <span className="font-inter text-gray-200">
+                  Expert knowledge of {location.name} venues
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-light-gold font-bold">✓</span>
+                <span className="font-inter text-gray-200">
+                  Premium local vendor partnerships
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-light-gold font-bold">✓</span>
+                <span className="font-inter text-gray-200">
+                  Weather & terrain expertise
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-light-gold font-bold">✓</span>
+                <span className="font-inter text-gray-200">
+                  Logistics management from day 1
+                </span>
+              </div>
             </div>
           </motion.div>
 
-          {/* Right: Stats/Info */}
+          {/* CTA Box */}
           <motion.div
             variants={itemVariants}
-            className="grid grid-cols-2 gap-6"
+            className="card-luxury p-8 border-2 border-event-gold/50 bg-gradient-to-br from-event-gold/5 to-light-gold/5"
           >
-            {[
-              { label: 'Years Experience', value: '15+' },
-              { label: 'Events Completed', value: '500+' },
-              { label: 'Client Satisfaction', value: '98%' },
-              { label: 'Service Locations', value: '7' },
-            ].map((stat, idx) => (
-              <motion.div
-                key={idx}
-                variants={itemVariants}
-                className="bg-gradient-to-br from-event-gold/10 to-light-gold/5 border border-event-gold/30 rounded-lg p-6 text-center backdrop-blur-sm"
-              >
-                <div className="font-playfair text-3xl font-bold text-event-gold mb-2">
-                  {stat.value}
-                </div>
-                <div className="font-inter text-sm text-gray-400">
-                  {stat.label}
-                </div>
-              </motion.div>
-            ))}
+            <h4 className="font-playfair text-2xl font-bold text-event-gold mb-4">
+              Ready to Plan?
+            </h4>
+            <p className="font-inter text-gray-300 mb-6">
+              Get a free consultation to discuss your {service.display.toLowerCase()} needs and how we can create something extraordinary in {location.name}.
+            </p>
+            <div className="space-y-3 mb-8">
+              <div className="flex items-center gap-2 text-sm text-gray-200">
+                <span>📞</span> <span>24-Hour Response Guarantee</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-200">
+                <span>✓</span> <span>No Obligation Consultation</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-200">
+                <span>⚡</span> <span>Competitive Pricing</span>
+              </div>
+            </div>
+            <Link
+              href="/contact"
+              className="block w-full px-6 py-3 bg-event-gold text-rich-black font-playfair font-bold rounded-lg hover:bg-light-gold transition-colors text-center mb-3"
+            >
+              Get Free Consultation
+            </Link>
+            <a
+              href={`https://wa.me/919332345023?text=Hi%20Eventara%2C%20I'm%20interested%20in%20${service.display.replace(/ /g, '%20')}%20services%20in%20${location.name}.%20Please%20provide%20details%20and%20pricing.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full px-6 py-3 bg-event-gold/20 border border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/30 transition-colors text-center"
+            >
+              Chat on WhatsApp
+            </a>
           </motion.div>
         </motion.div>
 
-        {/* Service-Specific Info */}
+        {/* FAQ/Questions Section */}
         <motion.div
           variants={itemVariants}
-          className="mt-16 bg-gradient-to-r from-event-gold/10 via-light-gold/5 to-event-gold/10 border border-event-gold/20 rounded-xl p-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-100px' }}
+          className="bg-rich-black border border-event-gold/20 rounded-xl p-8"
         >
-          <h3 className="font-playfair text-2xl font-bold text-event-gold mb-4">
-            Why Choose Eventara for {service.display}?
+          <h3 className="font-playfair text-2xl font-bold text-event-gold mb-6">
+            Common Questions
           </h3>
-          <p className="font-inter text-gray-300 mb-4">
-            As {location.name}'s trusted event management partner, we bring
-            expertise, creativity, and meticulous attention to detail to every
-            {service.display.toLowerCase()} service we provide.
-          </p>
-          <ul className="grid md:grid-cols-2 gap-3 text-gray-300">
-            <li className="flex items-center gap-2">
-              <span className="text-light-gold">✓</span> Local expertise in{' '}
-              {location.name}
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-light-gold">✓</span> Premium vendor network
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-light-gold">✓</span> Luxury standards
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-light-gold">✓</span> 24/7 event support
-            </li>
-          </ul>
+          <div className="space-y-4">
+            <details className="cursor-pointer group">
+              <summary className="flex items-center gap-3 font-inter font-semibold text-gray-200 hover:text-event-gold transition-colors">
+                <span className="text-light-gold group-open:rotate-90 transition-transform">
+                  ▶
+                </span>
+                How far in advance should I book {service.display.toLowerCase()}?
+              </summary>
+              <p className="font-inter text-gray-400 mt-3 ml-6">
+                We recommend 3-6 months in advance for optimal selection and planning. However, we can accommodate urgent requests with our rush booking service.
+              </p>
+            </details>
+            <details className="cursor-pointer group">
+              <summary className="flex items-center gap-3 font-inter font-semibold text-gray-200 hover:text-event-gold transition-colors">
+                <span className="text-light-gold group-open:rotate-90 transition-transform">
+                  ▶
+                </span>
+                What's included in {service.display.toLowerCase()} pricing?
+              </summary>
+              <p className="font-inter text-gray-400 mt-3 ml-6">
+                We provide transparent, all-inclusive pricing. Our quotation includes all services, setup, coordination, and day-of support. No hidden charges.
+              </p>
+            </details>
+            <details className="cursor-pointer group">
+              <summary className="flex items-center gap-3 font-inter font-semibold text-gray-200 hover:text-event-gold transition-colors">
+                <span className="text-light-gold group-open:rotate-90 transition-transform">
+                  ▶
+                </span>
+                Can I customize {service.display.toLowerCase()} for my event?
+              </summary>
+              <p className="font-inter text-gray-400 mt-3 ml-6">
+                Absolutely! All our services are fully customizable to match your vision, budget, and preferences. We work closely with you to create exactly what you need.
+              </p>
+            </details>
+          </div>
         </motion.div>
       </div>
     </section>
