@@ -22,25 +22,70 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  // Generate SEO-optimized title with location and type for better rankings
+  const seoTitle = `${venue.name} ${venue.location} - Premium ${venue.type} Wedding Venue | Eventara`;
+  
+  // Generate comprehensive meta description with key details
+  const seoDescription = `${venue.name} wedding venue in ${venue.location}. ${venue.type} for ${venue.capacity} guests. ${venue.priceRange}. Book now for your destination wedding.`;
+
+  // Build comprehensive keyword list for venue-specific and local searches
+  const baseKeywords = [
+    `${venue.name}`,
+    `${venue.name} wedding`,
+    `${venue.name} venue`,
+    `wedding venue ${venue.location}`,
+    `${venue.location} wedding venue`,
+    `${venue.type} ${venue.location}`,
+    `${venue.type} wedding venue`,
+    `wedding banquet hall ${venue.location}`,
+    `destination wedding ${venue.location}`,
+    `wedding resort ${venue.location}`,
+    `event space ${venue.location}`,
+    `marriage venue ${venue.location}`,
+    ...venue.keywords,
+  ];
+
   return {
-    title: venue.seoTitle || `${venue.name} - ${venue.location}`,
-    description: venue.description,
-    keywords: [
-      ...venue.keywords,
-      'Eventara',
-      'wedding venue',
-      'event space',
-      venue.location,
-      venue.type,
-    ],
+    title: seoTitle,
+    description: seoDescription,
+    keywords: baseKeywords,
+    authors: [{ name: 'Eventara' }],
+    creator: 'Eventara',
+    publisher: 'Eventara',
     openGraph: {
-      title: venue.seoTitle || venue.name,
-      description: venue.description,
+      title: seoTitle,
+      description: seoDescription,
       type: 'website',
       url: `https://eventaraevents.com/venues/${slug}`,
+      siteName: 'Eventara',
+      locale: 'en_IN',
+      images: [
+        {
+          url: 'https://eventaraevents.com/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: venue.name,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: seoTitle,
+      description: seoDescription,
+      creator: '@eventara',
     },
     alternates: {
       canonical: `https://eventaraevents.com/venues/${slug}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+    verification: {
+      google: 'google-site-verification-code',
     },
   };
 }
