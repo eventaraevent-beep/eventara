@@ -13,6 +13,12 @@ export const metadata: Metadata = {
     'corporate event tips',
     'celebration ideas',
     'wedding blog',
+    'destination wedding guide',
+    'luxury wedding tips',
+    'wedding planner guide',
+    'event management blog',
+    'destination wedding blog',
+    'Darjeeling wedding',
   ],
 };
 

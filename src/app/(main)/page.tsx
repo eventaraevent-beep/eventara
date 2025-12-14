@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     'Darjeeling event planner',
     'Siliguri wedding planner',
     'event coordination',
+    'destination wedding',
+    'hill station wedding',
+    'tea garden wedding',
+    'Northeast India events',
+    'luxury destination wedding',
+    'wedding planner',
   ],
 };
 
