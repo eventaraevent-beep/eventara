@@ -1,10 +1,19 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog | Eventara',
+  title: 'Event Planning Blog | Wedding Ideas & Corporate Event Tips | Eventara',
   description:
-    'Read our blog for event planning tips, wedding ideas, and insights into luxury celebrations in the Darjeeling region.',
-  keywords: ['blog', 'event planning', 'wedding tips', 'ideas', 'guides'],
+    'Expert event planning blog: wedding ideas, corporate event guides, decoration tips, catering advice, and luxury celebration insights for Darjeeling, Siliguri, and Northeast India.',
+  keywords: [
+    'event planning blog',
+    'wedding ideas',
+    'wedding planning tips',
+    'event decoration',
+    'catering guide',
+    'corporate event tips',
+    'celebration ideas',
+    'wedding blog',
+  ],
 };
 
 import { BlogHero } from '@/components/sections/BlogHero';
