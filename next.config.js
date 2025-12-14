@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Disable trailing slashes to prevent 404 issues
+  trailingSlash: false,
+
   // Image Optimization
   images: {
     formats: ['image/webp', 'image/avif'],
