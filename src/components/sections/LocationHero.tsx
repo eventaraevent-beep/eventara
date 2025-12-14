@@ -31,6 +31,17 @@ export function LocationHero({ location }: LocationHeroProps) {
     },
   };
 
+  const handleWhatsAppClick = () => {
+    // Track GA4 event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'button_click', {
+        button_name: 'location_whatsapp_cta',
+        location: location.name,
+        device_type: window.innerWidth < 768 ? 'mobile' : 'desktop',
+      });
+    }
+  };
+
   return (
     <section className="relative min-h-screen pt-20 w-full overflow-hidden bg-rich-black">
       {/* Background Gradient */}
@@ -78,7 +89,8 @@ export function LocationHero({ location }: LocationHeroProps) {
         >
           <Link
             href="/contact"
-            className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl min-h-[48px] flex items-center justify-center"
+            title="Get free event planning consultation"
           >
             Get Free Consultation
           </Link>
@@ -86,7 +98,9 @@ export function LocationHero({ location }: LocationHeroProps) {
             href={`https://wa.me/919332345023?text=Hi%20Eventara%2C%20I'm%20interested%20in%20planning%20an%20event%20in%20${location.name}.%20Please%20share%20your%20services%20and%20packages.`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300"
+            onClick={handleWhatsAppClick}
+            className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center"
+            title="Chat with us on WhatsApp"
           >
             Chat on WhatsApp
           </a>

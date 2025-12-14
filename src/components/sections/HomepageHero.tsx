@@ -82,13 +82,15 @@ export function HomepageHero() {
         >
           <Link
             href="/contact"
-            className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl min-h-[48px] flex items-center justify-center"
+            title="Get free event planning consultation"
           >
             Get Free Consultation
           </Link>
           <Link
             href="/#services"
-            className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300"
+            className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center"
+            title="Explore our event services"
           >
             Explore All Services
           </Link>

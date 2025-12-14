@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
 import { StickyWhatsAppButton } from '@/components/ui/StickyWhatsAppButton';
+import { ServiceWorkerRegistry } from '@/components/ui/ServiceWorkerRegistry';
 import { OrganizationSchema } from '@/components/seo/ServiceSchema';
 import './globals.css';
 
@@ -91,6 +92,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <StickyWhatsAppButton />
+        <ServiceWorkerRegistry />
       </body>
     </html>
   );

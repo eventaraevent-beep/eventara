@@ -52,7 +52,7 @@ export function Navbar() {
               </Link>
             ))}
             <button 
-              className="px-6 py-2 bg-event-gold text-rich-black font-semibold rounded-lg hover:bg-light-gold transition-colors"
+              className="px-6 py-2 bg-event-gold text-rich-black font-semibold rounded-lg hover:bg-light-gold transition-colors min-h-[48px] flex items-center justify-center"
               onClick={() => {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
                   (window as any).gtag('event', 'button_click', {
@@ -62,6 +62,7 @@ export function Navbar() {
                 }
                 window.location.href = '/contact';
               }}
+              title="Get free event consultation"
             >
               Enquire Now
             </button>
@@ -109,7 +110,7 @@ export function Navbar() {
               </Link>
             ))}
             <button 
-              className="w-full px-4 py-2 bg-event-gold text-rich-black font-semibold rounded-lg"
+              className="w-full px-4 py-2 bg-event-gold text-rich-black font-semibold rounded-lg min-h-[48px] flex items-center justify-center"
               onClick={() => {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
                   (window as any).gtag('event', 'button_click', {
@@ -120,6 +121,7 @@ export function Navbar() {
                 setIsOpen(false);
                 window.location.href = '/contact';
               }}
+              title="Get free event consultation"
             >
               Enquire Now
             </button>
