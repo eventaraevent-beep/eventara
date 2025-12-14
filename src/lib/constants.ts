@@ -677,6 +677,44 @@ export const VENUES = [
     seoTitle: 'Jungle Adventure Lodge Dooars | Unique Adventure Wedding Venue',
     bestFor: ['Adventure Weddings', 'Offbeat Events', 'Tea Garden Celebrations', 'Nature Enthusiasts', 'Unique Ceremonies'],
   },
+
+  // SILIGURI FARM VENUES
+  {
+    slug: 'ykc-farms-siliguri',
+    name: 'YKC Farms',
+    location: 'Siliguri',
+    coordinates: { lat: 26.71, lng: 88.42 },
+    type: 'Farm Venue',
+    capacity: '150-400 guests',
+    priceRange: '₹80,000 - ₹300,000',
+    highlights: [
+      'Sprawling farmland venue',
+      'Open-air celebration space',
+      'Natural scenic backdrop',
+      'Farm-to-table catering',
+      'Organic setting for weddings',
+    ],
+    amenities: [
+      'Open Farm Space',
+      'Indoor Pavilion',
+      'Farm Catering',
+      'Parking Area',
+      'Basic Facilities',
+      'Outdoor Stage',
+    ],
+    keywords: [
+      'farm venue Siliguri',
+      'farmland wedding',
+      'farm wedding venue',
+      'garden venue Siliguri',
+      'outdoor wedding Siliguri',
+      'natural venue Siliguri',
+      'organic wedding venue',
+    ],
+    description: 'Beautiful farm venue in Siliguri offering sprawling open-air space for destination weddings and large celebrations with natural scenery.',
+    seoTitle: 'YKC Farms Siliguri | Farmland Wedding Venue',
+    bestFor: ['Farm Weddings', 'Destination Events', 'Outdoor Receptions', 'Garden Ceremonies', 'Large Celebrations'],
+  },
 ];
 
 export const SERVICES = [
