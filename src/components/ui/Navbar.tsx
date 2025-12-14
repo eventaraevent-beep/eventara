@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ThemeToggle } from './ThemeToggle';
 
 export function Navbar() {
   const pathname = usePathname();
@@ -24,7 +25,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-gradient-to-b from-rich-black/95 to-rich-black/80 backdrop-blur-md border-b border-event-gold/20">
+    <nav className="fixed top-0 w-full z-50 bg-gradient-to-b from-maroon-950/95 to-maroon-950/80 dark:from-maroon-950/95 dark:to-maroon-950/80 from-cream-50/95 to-cream-50/80 light:from-cream-50/95 light:to-cream-50/80 backdrop-blur-md border-b border-event-gold/20">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -33,11 +34,13 @@ export function Navbar() {
             className="flex items-center gap-2 font-playfair text-2xl font-bold"
           >
             <span className="text-event-gold">✦</span>
-            <span className="text-gradient">EVENTARA</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-gold to-light-gold dark:from-event-gold dark:to-light-gold from-maroon-700 to-maroon-950 light:from-maroon-700 light:to-maroon-950">
+              EVENTARA
+            </span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-4 lg:gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -45,14 +48,15 @@ export function Navbar() {
                 className={`font-inter text-sm font-medium transition-colors ${
                   pathname === item.href
                     ? 'text-event-gold'
-                    : 'text-gray-300 hover:text-event-gold'
+                    : 'text-gray-600 dark:text-gray-300 hover:text-event-gold light:text-gray-600 light:hover:text-event-gold'
                 }`}
               >
                 {item.label}
               </Link>
             ))}
+            <ThemeToggle />
             <button 
-              className="px-6 py-2 bg-event-gold text-rich-black font-semibold rounded-lg hover:bg-light-gold transition-colors min-h-[48px] flex items-center justify-center"
+              className="px-6 py-2 bg-event-gold text-maroon-950 dark:text-maroon-950 font-semibold rounded-lg hover:bg-light-gold transition-colors min-h-[48px] flex items-center justify-center light:text-maroon-950 light:hover:bg-light-gold"
               onClick={() => {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
                   (window as any).gtag('event', 'button_click', {
@@ -103,14 +107,17 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-2 text-gray-300 hover:text-event-gold transition-colors"
+                className="block px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-event-gold transition-colors light:text-gray-600"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
+            <div className="px-4 py-2">
+              <ThemeToggle />
+            </div>
             <button 
-              className="w-full px-4 py-2 bg-event-gold text-rich-black font-semibold rounded-lg min-h-[48px] flex items-center justify-center"
+              className="w-full px-4 py-2 bg-event-gold text-maroon-950 dark:text-maroon-950 font-semibold rounded-lg min-h-[48px] flex items-center justify-center light:text-maroon-950"
               onClick={() => {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
                   (window as any).gtag('event', 'button_click', {

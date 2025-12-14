@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
+import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
 import { StickyWhatsAppButton } from '@/components/ui/StickyWhatsAppButton';
@@ -72,11 +73,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable} scroll-smooth`}
+      suppressHydrationWarning
     >
       <head>
-        {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
-        <meta name="theme-color" content="#0a0a0a" />
-        <meta name="color-scheme" content="dark" />
+        {/* Theme color */}
+        <meta name="theme-color" content="#3A0D16" />
+        <meta name="color-scheme" content="dark light" />
         {/* Canonical URL */}
         <link rel="canonical" href="https://eventaraevents.com" />
         {/* Preconnect to optimize performance */}
@@ -87,12 +89,14 @@ export default function RootLayout({
         {/* Organization Schema */}
         <OrganizationSchema siteURL="https://eventaraevents.com" />
       </head>
-      <body className="bg-rich-black">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <StickyWhatsAppButton />
-        <ServiceWorkerRegistry />
+      <body className="bg-maroon-950 dark:bg-maroon-950 text-gray-900 dark:text-cream-300">
+        <ThemeProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <StickyWhatsAppButton />
+          <ServiceWorkerRegistry />
+        </ThemeProvider>
       </body>
     </html>
   );
