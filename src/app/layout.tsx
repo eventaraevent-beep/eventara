@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
+import Script from 'next/script';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
 import { StickyWhatsAppButton } from '@/components/ui/StickyWhatsAppButton';
 import { ServiceWorkerRegistry } from '@/components/ui/ServiceWorkerRegistry';
 import { OrganizationSchema } from '@/components/seo/ServiceSchema';
+import { EventManagementCompanySchema } from '@/components/seo/EventManagementCompanySchema';
 import './globals.css';
 
 const playfair = Playfair_Display({
@@ -74,18 +76,51 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} scroll-smooth`}
     >
       <head>
+        {/* Preconnect to external domains for faster DNS resolution */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        
         {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
         <meta name="theme-color" content="#3A0D16" />
         <meta name="color-scheme" content="dark" />
+        
         {/* Canonical URL */}
         <link rel="canonical" href="https://eventaraevents.com" />
-        {/* Preconnect to optimize performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
         {/* Alternate links for SEO */}
         <link rel="alternate" hrefLang="en-IN" href="https://eventaraevents.com" />
-        {/* Organization Schema */}
+        
+        {/* Security and Performance Headers */}
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        
+        {/* Organization Schema & Event Management Schema */}
         <OrganizationSchema siteURL="https://eventaraevents.com" />
+        <EventManagementCompanySchema />
+        
+        {/* Google Analytics - Optimized for performance */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+          strategy="afterInteractive"
+          async
+        />
+        <Script
+          id="ga-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GA_MEASUREMENT_ID', {
+                page_path: window.location.pathname,
+                anonymize_ip: true,
+              });
+            `,
+          }}
+        />
       </head>
       <body className="bg-rich-black text-cream-light">
         <Navbar />
