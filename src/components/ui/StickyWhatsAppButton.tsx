@@ -23,12 +23,12 @@ export function StickyWhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleWhatsAppClick}
-      className="fixed bottom-4 right-4 md:hidden z-40 flex items-center justify-center w-14 h-14 bg-event-gold text-rich-black rounded-full shadow-lg hover:bg-light-gold transition-colors duration-300 hover:shadow-xl"
+      className="fixed bottom-6 right-6 md:hidden z-40 flex items-center justify-center w-16 h-16 bg-gradient-to-br from-event-gold to-light-gold text-rich-black rounded-full shadow-2xl hover:shadow-2xl hover:scale-110 transition-all duration-300 group"
       title="Chat on WhatsApp"
       aria-label="Chat on WhatsApp"
     >
       <svg
-        className="w-6 h-6"
+        className="w-7 h-7 group-hover:scale-125 transition-transform duration-300"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
