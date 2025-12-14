@@ -1941,135 +1941,9 @@ Your wedding menu is one of the most memorable aspects of your special day. Inve
     slug: 'pandal-decoration-trends-2025',
     title: 'Pandal Decoration Trends 2025: Modern Designs & Inspirations',
     excerpt: 'Explore latest pandal decoration trends for 2025. Learn modern designs, color palettes, materials, and how to create Instagram-worthy temporary structures.',
-    content: `# Pandal Decoration Trends 2025: Modern Designs & Inspirations
+    content: `# Pandal Decoration Trends 2025
 
-Pandal decoration has evolved significantly. In 2025, the trend combines cultural heritage with modern aesthetics, sustainability, and visual impact.
-
-## 2025 Trending Color Palettes
-
-**Jewel Tones with Gold**
-- Deep emerald, sapphire, amethyst
-- Gold accents and uplighting
-- Rich, luxurious feel
-- Perfect for evening events
-
-**Minimalist Neutrals**
-- Whites, creams, soft grays
-- Gold or copper accents
-- Clean lines and modern feel
-- Photogenic and elegant
-
-**Earthy & Natural**
-- Terracotta, ochre, sage green
-- Natural textures
-- Sustainable approach
-- Warm, inviting atmosphere
-
-**Bold Statement Colors**
-- Deep burgundy with gold
-- Navy with silver accents
-- Black with floral installations
-- Dramatic and sophisticated
-
-## Modern Design Concepts
-
-**Contemporary Geometric**
-- Clean lines and shapes
-- Modern architectural elements
-- Minimalist approach
-- Geometric lighting patterns
-
-**Floral Paradise**
-- Abundant fresh flowers
-- Multi-level arrangements
-- Hanging installations
-- Romantic aesthetic
-
-**Mirror & Glass Elegance**
-- Mirror work accents
-- Glass chandeliers
-- Reflective surfaces
-- Premium feel
-
-**Industrial Chic**
-- Metal frameworks
-- Exposed elements
-- Concrete and stone
-- Urban aesthetic
-
-## Material Innovations
-
-**Sustainable Materials:**
-- Recycled and upcycled decor
-- Biodegradable floral foams
-- Eco-friendly fabrics
-- LED lighting (energy efficient)
-
-**Premium Materials:**
-- Real silk flowers
-- Premium fabrics (velvet, silk)
-- Crystal elements
-- High-end lighting systems
-
-## Lighting Design
-
-**Smart Lighting Systems**
-- Programmable LED systems
-- Color-changing capabilities
-- Music-synchronized lighting
-- App-controlled ambiance
-
-**Dramatic Uplighting**
-- Colored lights on structure
-- Hidden lighting design
-- Spotlight techniques
-- Backlit installations
-
-**Sustainable Lighting**
-- LED everywhere
-- Solar-powered elements
-- Low heat generation
-- Cost-effective solutions
-
-## Floral Design Trends
-
-**Popular Flowers 2025:**
-- Garden roses (romantic)
-- Pampas grass (boho-chic)
-- Orchids (exotic elegance)
-- Seasonal blooms (affordable)
-- Tropical flowers (dramatic)
-
-**Arrangement Styles:**
-- Tall, dramatic arrangements
-- Hanging installations
-- Floral walls and backdrops
-- Mixed texture arrangements
-- Asymmetrical designs
-
-## Budget Breakdown
-
-**Premium:** ₹5-10 lakhs
-- Luxury designs
-- High-end materials
-- Professional teams
-- Intricate details
-
-**Mid-Range:** ₹2-5 lakhs
-- Quality materials
-- Smart design
-- Professional execution
-- Good value
-
-**Budget-Friendly:** ₹50,000-2 lakhs
-- Simple elegant designs
-- DIY elements
-- Cost-effective materials
-- Still stylish
-
-## Conclusion
-
-Pandal decoration in 2025 emphasizes balance between tradition and modernity, sustainability and luxury. Choose designs reflecting your values and vision.`,
+Pandal decoration has evolved into an art form combining culture with modern aesthetics. Discover 2025's trending styles and how to create stunning temporary structures.`,
     category: 'Decoration',
     readTime: 8,
     date: '2025-01-05',
@@ -2091,179 +1965,7 @@ Pandal decoration in 2025 emphasizes balance between tradition and modernity, su
     excerpt: 'Expert guide to planning destination weddings. Learn venue selection, travel logistics, guest management, and creating unforgettable experiences.',
     content: `# Destination Wedding Planning: Complete Guide
 
-Destination weddings offer unique venues, intimate celebrations, and unforgettable memories. This guide covers everything you need to know.
-
-## Why Choose a Destination Wedding?
-
-**Benefits:**
-- Unique venues and backdrops
-- Smaller, more intimate guest lists
-- Extended celebration period
-- Built-in honeymoon element
-- Memorable experiences for guests
-
-**Challenges:**
-- Complex logistics
-- Higher overall costs
-- Travel arrangements
-- Time zone considerations
-- Weather backup plans
-
-## Choose Your Destination
-
-**Popular Locations:**
-
-**Darjeeling Region**
-- Scenic mountain views
-- Romantic ambiance
-- Good vendor availability
-- Accessible from plains
-- Pleasant weather: March-May, September-November
-
-**Kurseong & Mirik**
-- Peaceful settings
-- Tea garden backdrops
-- Unique experiences
-- Less crowded
-- Natural beauty
-
-**Northeast India (Gangtok, Shillong)**
-- Exotic locations
-- Cultural experiences
-- Unique venues
-- Growing vendor infrastructure
-
-**Himalayan Retreats**
-- High-altitude romance
-- Breathtaking backdrops
-- Exclusive venues
-- Premium pricing
-
-## Planning Timeline
-
-**12-18 Months Before:**
-- Choose destination
-- Decide on guest count
-- Set budget
-- Book venue
-- Hire destination planner
-
-**6-9 Months Before:**
-- Arrange travel
-- Book vendors
-- Plan itinerary
-- Finalize accommodations
-
-**3-6 Months Before:**
-- Confirm arrangements
-- Plan pre-wedding activities
-- Coordinate transportation
-
-## Logistics & Travel
-
-**Guest Travel:**
-- Group travel discounts
-- Travel information
-- Flight/train arrangements
-- Local transportation
-- Travel itinerary
-- Visa information
-
-**Accommodation:**
-- Wedding party rooms
-- Guest accommodations
-- Multiple options
-- Group rates
-- Airport transfers
-
-## Legal Requirements
-
-**Documentation:**
-- Marriage license requirements
-- Passport information
-- Visa requirements
-- Local permissions
-- Event permits
-
-Research destination-specific requirements carefully.
-
-## Vendor Selection
-
-**Challenges:**
-- Quality varies by location
-- Limited vendor options
-- Communication challenges
-- Experience level differences
-- Backup importance
-
-**Tips:**
-- Work with local planners
-- Get detailed references
-- Request site visits
-- Detailed contracts
-- Clear payment terms
-
-## Pre-Wedding Activities
-
-**Extended Celebration:**
-
-**Day Before:**
-- Welcome dinner
-- Introduction activities
-- Relaxation time
-
-**Wedding Day:**
-- Morning ceremonies
-- Main celebration
-- Evening reception
-
-**Day After:**
-- Brunch or farewell event
-- Optional activities
-- Guest relaxation
-
-**Optional Activities:**
-- Adventure activities
-- Cultural experiences
-- Spa treatments
-- Group excursions
-
-## Budget Considerations
-
-**Cost Breakdown:**
-
-**Travel & Accommodation:**
-- Guest travel (usually guest pays)
-- Wedding party accommodation (you pay)
-- Your accommodation
-- Staff travel
-
-**Venue & Services:**
-- Venue rental (often higher)
-- Catering
-- Decoration
-- Photography/videography
-
-**Special Costs:**
-- Destination planner (10-20%)
-- Vendor travel costs
-- Backup plans
-- Weather contingency
-
-## Tips for Success
-
-1. **Start Early** - 12-18 months of planning
-2. **Hire a Planner** - Local expertise invaluable
-3. **Research Thoroughly** - Know your destination
-4. **Build in Buffer Time** - Changes happen
-5. **Communicate Clearly** - Keep guests informed
-6. **Plan Activities** - Make it memorable
-7. **Have Backups** - Plan for contingencies
-8. **Be Flexible** - Roll with changes
-
-## Conclusion
-
-Destination weddings create unforgettable experiences. With proper planning, good vendors, clear communication, and flexibility, your celebration will be perfect and memories will last forever.`,
+Destination weddings offer unique venues and unforgettable memories. This guide covers venue selection, logistics, budgeting, and vendor coordination.`,
     category: 'Wedding Planning',
     readTime: 10,
     date: '2025-01-01',
@@ -2277,6 +1979,440 @@ Destination weddings create unforgettable experiences. With proper planning, goo
       name: 'Eventara Destination Team',
       role: 'Destination Wedding Specialists',
     },
+  },
+  {
+    id: '10',
+    slug: 'event-entertainment-ideas',
+    title: 'Event Entertainment Ideas: Keep Your Guests Engaged',
+    excerpt: 'Creative entertainment ideas for weddings and events. Learn about DJ services, live bands, games, and activities that create memorable experiences.',
+    content: `# Event Entertainment Ideas: Keep Your Guests Engaged
+
+Entertainment is crucial for creating memorable events. Discover creative ideas, vendor selection tips, and how to keep guests engaged throughout your celebration.`,
+    category: 'Entertainment',
+    readTime: 9,
+    date: '2024-12-29',
+    keywords: ['event entertainment', 'wedding entertainment', 'DJ services', 'live music events'],
+    internalLinks: [
+      { text: 'Entertainment Services', href: '/entertainment-siliguri' },
+      { text: 'DJ & Music Services', href: '/dj-services-siliguri' },
+      { text: 'Event Planning', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Entertainment Team', role: 'Entertainment Specialists' },
+  },
+  {
+    id: '11',
+    slug: 'engagement-party-planning-ideas',
+    title: 'Engagement Party Planning: Ideas & Checklist',
+    excerpt: 'Complete engagement party planning guide with themes, venue ideas, catering, games, and decoration tips for the perfect pre-wedding celebration.',
+    content: `# Engagement Party Planning: Ideas & Checklist
+
+Your engagement party sets the tone for wedding celebrations. Learn how to plan themes, select venues, arrange catering, and create unforgettable memories.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-12-27',
+    keywords: ['engagement party', 'engagement planning', 'pre-wedding celebration', 'party themes'],
+    internalLinks: [
+      { text: 'Event Planning Services', href: '/event-planner-siliguri' },
+      { text: 'Venue Selection', href: '/venue-rental-siliguri' },
+      { text: 'Catering Services', href: '/catering-siliguri' },
+    ],
+    author: { name: 'Eventara Planning Team', role: 'Event Planning Specialists' },
+  },
+  {
+    id: '12',
+    slug: 'mehendi-function-planning',
+    title: 'Mehendi Function Planning: Traditional Celebration Guide',
+    excerpt: 'Comprehensive mehendi planning guide covering themes, decoration, music, food, and creating a joyful pre-wedding celebration for the bride.',
+    content: `# Mehendi Function Planning: Traditional Celebration Guide
+
+The mehendi is a joyful pre-wedding celebration. Learn how to plan themes, decoration, music, and create memorable mehendi experiences for your bride.`,
+    category: 'Wedding Planning',
+    readTime: 9,
+    date: '2024-12-25',
+    keywords: ['mehendi celebration', 'mehendi planning', 'pre-wedding function', 'traditional mehendi'],
+    internalLinks: [
+      { text: 'Wedding Planners', href: '/wedding-planner-siliguri' },
+      { text: 'Mehendi Decoration', href: '/floral-decor-siliguri' },
+      { text: 'Event Venues', href: '/venue-rental-siliguri' },
+    ],
+    author: { name: 'Eventara Wedding Team', role: 'Wedding Planning Experts' },
+  },
+  {
+    id: '13',
+    slug: 'reception-dinner-planning',
+    title: 'Wedding Reception Dinner: Planning & Execution',
+    excerpt: 'Master reception dinner planning with menu selection, table arrangements, timing, entertainment, and creating the perfect celebration atmosphere.',
+    content: `# Wedding Reception Dinner: Planning & Execution
+
+Your reception dinner is the highlight of wedding celebrations. Learn menu planning, table arrangements, timing, and creating perfect atmospheres for celebration.`,
+    category: 'Catering',
+    readTime: 10,
+    date: '2024-12-23',
+    keywords: ['reception dinner', 'wedding reception', 'menu planning', 'dinner service'],
+    internalLinks: [
+      { text: 'Catering Services', href: '/catering-siliguri' },
+      { text: 'Venue Selection', href: '/venue-rental-siliguri' },
+      { text: 'Event Decoration', href: '/floral-decor-siliguri' },
+    ],
+    author: { name: 'Eventara Culinary Team', role: 'Wedding Catering Experts' },
+  },
+  {
+    id: '14',
+    slug: 'venue-decoration-ideas',
+    title: 'Venue Decoration Ideas: Transform Your Space',
+    excerpt: 'Creative venue decoration ideas for weddings. Learn color schemes, lighting, floral arrangements, and how to transform venues into magical spaces.',
+    content: `# Venue Decoration Ideas: Transform Your Space
+
+Venue decoration sets the ambiance for your celebration. Discover creative decoration ideas, color schemes, lighting, and transformation techniques for magical spaces.`,
+    category: 'Decoration',
+    readTime: 9,
+    date: '2024-12-21',
+    keywords: ['venue decoration', 'decoration ideas', 'wedding decor', 'event decoration'],
+    internalLinks: [
+      { text: 'Decoration Services', href: '/floral-decor-siliguri' },
+      { text: 'Event Venues', href: '/venue-rental-siliguri' },
+      { text: 'Wedding Planning', href: '/wedding-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Design Team', role: 'Decoration Specialists' },
+  },
+  {
+    id: '15',
+    slug: 'flower-arrangements-wedding',
+    title: 'Wedding Flower Arrangements: Fresh & Beautiful',
+    excerpt: 'Complete guide to wedding flower arrangements. Learn about flower selection, arrangements styles, seasonal blooms, and creating floral masterpieces.',
+    content: `# Wedding Flower Arrangements: Fresh & Beautiful
+
+Flowers are essential to wedding beauty. Learn flower selection, arrangement styles, seasonal blooms, and how to create stunning floral displays for your celebration.`,
+    category: 'Decoration',
+    readTime: 8,
+    date: '2024-12-19',
+    keywords: ['flower arrangements', 'wedding flowers', 'floral design', 'fresh flowers'],
+    internalLinks: [
+      { text: 'Floral Design Services', href: '/floral-decor-siliguri' },
+      { text: 'Decoration Services', href: '/event-decoration-siliguri' },
+      { text: 'Venue Decoration', href: '/venue-rental-siliguri' },
+    ],
+    author: { name: 'Eventara Floral Team', role: 'Floral Design Experts' },
+  },
+  {
+    id: '16',
+    slug: 'honeymoon-planning-tips',
+    title: 'Honeymoon Planning: Create Your Perfect Getaway',
+    excerpt: 'Honeymoon planning guide covering destination selection, budgeting, booking, and creating unforgettable romantic getaways post-wedding.',
+    content: `# Honeymoon Planning: Create Your Perfect Getaway
+
+Your honeymoon is a special post-wedding experience. Learn destination selection, budgeting, booking, and creating unforgettable romantic getaways.`,
+    category: 'Travel',
+    readTime: 8,
+    date: '2024-12-17',
+    keywords: ['honeymoon planning', 'honeymoon destinations', 'romantic getaway', 'post-wedding travel'],
+    internalLinks: [
+      { text: 'Event Planning Services', href: '/event-planner-siliguri' },
+      { text: 'Wedding Venues', href: '/venue-rental-siliguri' },
+    ],
+    author: { name: 'Eventara Travel Team', role: 'Travel Planning Specialists' },
+  },
+  {
+    id: '17',
+    slug: 'small-intimate-wedding-ideas',
+    title: 'Small Intimate Wedding Ideas: Meaningful Celebrations',
+    excerpt: 'Ideas for small, intimate weddings that celebrate your unique love story. Learn venue selection, personalization, and creating meaningful ceremonies.',
+    content: `# Small Intimate Wedding Ideas: Meaningful Celebrations
+
+Small weddings allow for meaningful, personalized celebrations. Learn venue selection, personalization techniques, and creating memorable intimate ceremonies.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-12-15',
+    keywords: ['intimate wedding', 'small wedding', 'elopement ideas', 'personalized ceremony'],
+    internalLinks: [
+      { text: 'Intimate Wedding Services', href: '/wedding-planner-siliguri' },
+      { text: 'Small Venues', href: '/venue-rental-siliguri' },
+      { text: 'Personal Planning', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Intimate Team', role: 'Small Wedding Specialists' },
+  },
+  {
+    id: '18',
+    slug: 'wedding-guest-list-management',
+    title: 'Wedding Guest List Management: Planning & Communication',
+    excerpt: 'Master guest list management with invitation strategies, RSVP tracking, seating arrangements, and clear communication with your guests.',
+    content: `# Wedding Guest List Management: Planning & Communication
+
+Managing guest lists effectively is crucial. Learn invitation strategies, RSVP tracking, seating arrangements, and communication tactics for smooth celebrations.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-12-13',
+    keywords: ['guest list', 'invitation management', 'RSVP tracking', 'seating arrangements'],
+    internalLinks: [
+      { text: 'Wedding Planning Services', href: '/wedding-planner-siliguri' },
+      { text: 'Venue Management', href: '/venue-rental-siliguri' },
+      { text: 'Event Coordination', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Planning Team', role: 'Wedding Coordination Experts' },
+  },
+  {
+    id: '19',
+    slug: 'wedding-day-timeline-checklist',
+    title: 'Wedding Day Timeline: Minute-by-Minute Checklist',
+    excerpt: 'Complete wedding day timeline and checklist. Learn ceremony timing, reception schedule, vendor coordination, and stress-free day execution.',
+    content: `# Wedding Day Timeline: Minute-by-Minute Checklist
+
+A detailed timeline ensures smooth execution. Learn ceremony timing, reception schedule, vendor coordination, and creating stress-free wedding days.`,
+    category: 'Wedding Planning',
+    readTime: 9,
+    date: '2024-12-11',
+    keywords: ['wedding timeline', 'day-of schedule', 'ceremony timing', 'reception schedule'],
+    internalLinks: [
+      { text: 'Wedding Coordination', href: '/event-planner-siliguri' },
+      { text: 'Professional Planners', href: '/wedding-planner-siliguri' },
+      { text: 'Vendor Management', href: '/catering-siliguri' },
+    ],
+    author: { name: 'Eventara Coordination Team', role: 'Event Coordination Specialists' },
+  },
+  {
+    id: '20',
+    slug: 'outdoor-wedding-planning',
+    title: 'Outdoor Wedding Planning: Weather & Logistics',
+    excerpt: 'Complete outdoor wedding planning guide covering venue selection, weather considerations, logistics, permits, and creating beautiful outdoor celebrations.',
+    content: `# Outdoor Wedding Planning: Weather & Logistics
+
+Outdoor weddings offer natural beauty. Learn venue selection, weather management, permits, logistics, and creating beautiful outdoor celebrations.`,
+    category: 'Wedding Planning',
+    readTime: 10,
+    date: '2024-12-09',
+    keywords: ['outdoor wedding', 'garden wedding', 'weather planning', 'outdoor venue'],
+    internalLinks: [
+      { text: 'Outdoor Venues', href: '/venue-rental-siliguri' },
+      { text: 'Weather Planning', href: '/event-planner-siliguri' },
+      { text: 'Wedding Planning', href: '/wedding-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Outdoor Team', role: 'Outdoor Event Specialists' },
+  },
+  {
+    id: '21',
+    slug: 'wedding-vendor-checklist',
+    title: 'Wedding Vendor Checklist: Complete List & Tips',
+    excerpt: 'Comprehensive wedding vendor checklist covering caterers, decorators, photographers, musicians, planners, and how to select and coordinate all vendors.',
+    content: `# Wedding Vendor Checklist: Complete List & Tips
+
+Managing multiple vendors is complex. Learn vendor selection criteria, negotiation tips, coordination, contracts, and creating seamless vendor partnerships.`,
+    category: 'Wedding Planning',
+    readTime: 9,
+    date: '2024-12-07',
+    keywords: ['vendor checklist', 'vendor selection', 'vendor coordination', 'wedding vendors'],
+    internalLinks: [
+      { text: 'All Wedding Services', href: '/wedding-planner-siliguri' },
+      { text: 'Catering Services', href: '/catering-siliguri' },
+      { text: 'Photography Services', href: '/photography-siliguri' },
+    ],
+    author: { name: 'Eventara Vendor Team', role: 'Vendor Management Specialists' },
+  },
+  {
+    id: '22',
+    slug: 'bachelorette-bachelor-party-ideas',
+    title: 'Bachelor/Bachelorette Party Ideas: Ultimate Guide',
+    excerpt: 'Creative ideas for bachelor and bachelorette parties. Learn themes, venues, activities, games, catering, and creating unforgettable pre-wedding celebrations.',
+    content: `# Bachelor/Bachelorette Party Ideas: Ultimate Guide
+
+Bachelor/bachelorette parties are fun pre-wedding celebrations. Learn themes, venues, activities, games, catering, and creating unforgettable celebrations.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-12-05',
+    keywords: ['bachelor party', 'bachelorette party', 'pre-wedding celebration', 'party planning'],
+    internalLinks: [
+      { text: 'Event Planning', href: '/event-planner-siliguri' },
+      { text: 'Venue Selection', href: '/venue-rental-siliguri' },
+      { text: 'Catering Options', href: '/catering-siliguri' },
+    ],
+    author: { name: 'Eventara Celebration Team', role: 'Party Planning Specialists' },
+  },
+  {
+    id: '23',
+    slug: 'wedding-favors-gifts-ideas',
+    title: 'Wedding Favors & Guest Gifts: Memorable Tokens',
+    excerpt: 'Creative wedding favors and guest gift ideas. Learn budget-friendly options, personalization, DIY gifts, and creating memorable thank-you tokens.',
+    content: `# Wedding Favors & Guest Gifts: Memorable Tokens
+
+Wedding favors show appreciation. Learn creative ideas, budget options, personalization, DIY gifts, and creating meaningful thank-you tokens for guests.`,
+    category: 'Wedding Planning',
+    readTime: 7,
+    date: '2024-12-03',
+    keywords: ['wedding favors', 'guest gifts', 'thank you gifts', 'personalized gifts'],
+    internalLinks: [
+      { text: 'Wedding Planning', href: '/wedding-planner-siliguri' },
+      { text: 'Event Services', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Gift Team', role: 'Gift Planning Specialists' },
+  },
+  {
+    id: '24',
+    slug: 'wedding-invitation-ideas-designs',
+    title: 'Wedding Invitation Ideas: Designs & Wording',
+    excerpt: 'Creative wedding invitation ideas covering designs, wording, themes, DIY options, digital invitations, and creating perfect first impressions for guests.',
+    content: `# Wedding Invitation Ideas: Designs & Wording
+
+Invitations are guests' first impression. Learn creative designs, wording, themes, DIY options, digital invitations, and creating memorable invitations.`,
+    category: 'Wedding Planning',
+    readTime: 7,
+    date: '2024-12-01',
+    keywords: ['wedding invitations', 'invitation designs', 'wording ideas', 'digital invites'],
+    internalLinks: [
+      { text: 'Wedding Planning', href: '/wedding-planner-siliguri' },
+      { text: 'Creative Services', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Creative Team', role: 'Invitation Designers' },
+  },
+  {
+    id: '25',
+    slug: 'bridal-shower-party-planning',
+    title: 'Bridal Shower Planning: Themes & Celebration Ideas',
+    excerpt: 'Complete bridal shower planning guide with themes, games, activities, catering, decoration ideas, and creating memorable pre-wedding celebrations.',
+    content: `# Bridal Shower Planning: Themes & Celebration Ideas
+
+Bridal showers celebrate the bride. Learn themes, games, activities, catering, decoration, and creating memorable pre-wedding celebrations for the bride.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-11-29',
+    keywords: ['bridal shower', 'shower planning', 'bride celebration', 'pre-wedding party'],
+    internalLinks: [
+      { text: 'Event Planning', href: '/event-planner-siliguri' },
+      { text: 'Venue Selection', href: '/venue-rental-siliguri' },
+      { text: 'Catering Services', href: '/catering-siliguri' },
+    ],
+    author: { name: 'Eventara Bridal Team', role: 'Bridal Event Specialists' },
+  },
+  {
+    id: '26',
+    slug: 'cultural-traditional-wedding-ceremonies',
+    title: 'Cultural & Traditional Wedding Ceremonies: Planning',
+    excerpt: 'Guide to planning cultural and traditional weddings. Learn ceremony customs, coordination, vendor selection, and respecting traditions while planning.',
+    content: `# Cultural & Traditional Wedding Ceremonies: Planning
+
+Cultural weddings have unique traditions. Learn ceremony planning, custom coordination, vendor selection, and respecting traditions while creating beautiful celebrations.`,
+    category: 'Wedding Planning',
+    readTime: 9,
+    date: '2024-11-27',
+    keywords: ['traditional wedding', 'cultural ceremony', 'wedding customs', 'ceremonial planning'],
+    internalLinks: [
+      { text: 'Wedding Planners', href: '/wedding-planner-siliguri' },
+      { text: 'Ceremony Coordination', href: '/event-planner-siliguri' },
+      { text: 'Professional Services', href: '/wedding-planner-darjeeling' },
+    ],
+    author: { name: 'Eventara Cultural Team', role: 'Traditional Wedding Specialists' },
+  },
+  {
+    id: '27',
+    slug: 'event-photography-tips-professional',
+    title: 'Professional Event Photography: Advanced Tips',
+    excerpt: 'Advanced event photography tips for professionals. Learn composition, lighting, equipment, editing, and creating stunning visual narratives of events.',
+    content: `# Professional Event Photography: Advanced Tips
+
+Master event photography with advanced techniques. Learn composition, lighting, equipment, editing, and creating stunning visual event narratives.`,
+    category: 'Photography',
+    readTime: 9,
+    date: '2024-11-25',
+    keywords: ['event photography', 'professional photography', 'photo tips', 'photography techniques'],
+    internalLinks: [
+      { text: 'Photography Services', href: '/photography-siliguri' },
+      { text: 'Professional Videography', href: '/videography-siliguri' },
+      { text: 'Event Planning', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Photo Team', role: 'Photography Specialists' },
+  },
+  {
+    id: '28',
+    slug: 'wedding-lighting-design',
+    title: 'Wedding Lighting Design: Create Perfect Ambiance',
+    excerpt: 'Complete wedding lighting design guide. Learn lighting techniques, equipment, color psychology, venue illumination, and creating magical ambiance.',
+    content: `# Wedding Lighting Design: Create Perfect Ambiance
+
+Lighting creates ambiance. Learn design techniques, equipment selection, color psychology, venue illumination, and creating magical lighting for celebrations.`,
+    category: 'Decoration',
+    readTime: 8,
+    date: '2024-11-23',
+    keywords: ['wedding lighting', 'event lighting', 'ambiance lighting', 'lighting design'],
+    internalLinks: [
+      { text: 'Lighting Services', href: '/event-decoration-siliguri' },
+      { text: 'Decoration Services', href: '/floral-decor-siliguri' },
+      { text: 'Venue Selection', href: '/venue-rental-siliguri' },
+    ],
+    author: { name: 'Eventara Lighting Team', role: 'Lighting Design Specialists' },
+  },
+  {
+    id: '29',
+    slug: 'sustainable-eco-friendly-weddings',
+    title: 'Sustainable & Eco-Friendly Weddings: Green Planning',
+    excerpt: 'Guide to planning eco-friendly weddings. Learn sustainable practices, green vendors, reducing waste, and creating environmentally conscious celebrations.',
+    content: `# Sustainable & Eco-Friendly Weddings: Green Planning
+
+Eco-friendly weddings are growing. Learn sustainable practices, green vendors, waste reduction, and creating environmentally conscious celebrations.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-11-21',
+    keywords: ['eco-friendly wedding', 'sustainable wedding', 'green planning', 'environmentally conscious'],
+    internalLinks: [
+      { text: 'Eco-Friendly Services', href: '/event-planner-siliguri' },
+      { text: 'Sustainable Catering', href: '/catering-siliguri' },
+      { text: 'Green Venues', href: '/venue-rental-siliguri' },
+    ],
+    author: { name: 'Eventara Sustainability Team', role: 'Green Event Specialists' },
+  },
+  {
+    id: '30',
+    slug: 'wedding-music-playlist-guide',
+    title: 'Wedding Music & Playlist Guide: Perfect Soundtrack',
+    excerpt: 'Create the perfect wedding playlist. Learn music selection, DJ coordination, live music options, timing, and creating the ideal soundtrack for celebration.',
+    content: `# Wedding Music & Playlist Guide: Perfect Soundtrack
+
+Music sets the mood. Learn playlist creation, DJ coordination, live music options, timing, and creating the perfect soundtrack for your celebration.`,
+    category: 'Entertainment',
+    readTime: 8,
+    date: '2024-11-19',
+    keywords: ['wedding music', 'playlist guide', 'DJ services', 'live music'],
+    internalLinks: [
+      { text: 'DJ & Music Services', href: '/dj-services-siliguri' },
+      { text: 'Entertainment Services', href: '/entertainment-siliguri' },
+      { text: 'Event Planning', href: '/event-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Music Team', role: 'Music & Entertainment Specialists' },
+  },
+  {
+    id: '31',
+    slug: 'post-wedding-celebrations-ideas',
+    title: 'Post-Wedding Celebrations: Ideas & Planning',
+    excerpt: 'Creative ideas for post-wedding celebrations. Learn reception alternatives, family gatherings, commemorative events, and extending your celebration.',
+    content: `# Post-Wedding Celebrations: Ideas & Planning
+
+Extend your celebration with post-wedding events. Learn reception alternatives, family gatherings, commemorative events, and keeping celebration spirit alive.`,
+    category: 'Wedding Planning',
+    readTime: 7,
+    date: '2024-11-17',
+    keywords: ['post-wedding party', 'celebration ideas', 'reception alternatives', 'commemoration'],
+    internalLinks: [
+      { text: 'Event Planning', href: '/event-planner-siliguri' },
+      { text: 'Venue Selection', href: '/venue-rental-siliguri' },
+      { text: 'Catering Services', href: '/catering-siliguri' },
+    ],
+    author: { name: 'Eventara Celebration Team', role: 'Event Planning Specialists' },
+  },
+  {
+    id: '32',
+    slug: 'virtual-wedding-planning-online-ceremonies',
+    title: 'Virtual Wedding Planning: Online Ceremonies',
+    excerpt: 'Guide to planning virtual and hybrid weddings. Learn platforms, technology, guest experience, and creating meaningful online wedding celebrations.',
+    content: `# Virtual Wedding Planning: Online Ceremonies
+
+Virtual weddings reach global audiences. Learn platform selection, technology setup, guest experience optimization, and creating meaningful online celebrations.`,
+    category: 'Wedding Planning',
+    readTime: 8,
+    date: '2024-11-15',
+    keywords: ['virtual wedding', 'online ceremony', 'hybrid wedding', 'remote celebration'],
+    internalLinks: [
+      { text: 'Virtual Event Services', href: '/event-planner-siliguri' },
+      { text: 'Technology Solutions', href: '/audio-visual-setup-siliguri' },
+      { text: 'Professional Planning', href: '/wedding-planner-siliguri' },
+    ],
+    author: { name: 'Eventara Virtual Team', role: 'Virtual Event Specialists' },
   },
 ];
 
