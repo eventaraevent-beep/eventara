@@ -220,10 +220,61 @@ export function ContactPageContent() {
                     aria-label="Event type"
                   >
                     <option value="">Select event type</option>
-                    <option value="Wedding">Wedding</option>
-                    <option value="Corporate Event">Corporate Event</option>
-                    <option value="Destination Tour">Destination Tour</option>
-                    <option value="Other">Other</option>
+                    <optgroup label="WEDDINGS & CELEBRATIONS">
+                      <option value="Wedding">Wedding</option>
+                      <option value="Engagement">Engagement</option>
+                      <option value="Mehendi">Mehendi</option>
+                      <option value="Sangeet">Sangeet</option>
+                      <option value="Haldi">Haldi</option>
+                      <option value="Bridal Shower">Bridal Shower</option>
+                      <option value="Bachelor Party">Bachelor Party</option>
+                      <option value="Bachelorette Party">Bachelorette Party</option>
+                    </optgroup>
+                    <optgroup label="FAMILY EVENTS">
+                      <option value="Birthday Party">Birthday Party</option>
+                      <option value="Anniversary">Anniversary</option>
+                      <option value="Baby Shower">Baby Shower</option>
+                      <option value="Gender Reveal">Gender Reveal</option>
+                      <option value="First Birthday">First Birthday</option>
+                      <option value="Naming Ceremony">Naming Ceremony</option>
+                      <option value="Puberty Ceremony">Puberty Ceremony</option>
+                      <option value="Family Reunion">Family Reunion</option>
+                    </optgroup>
+                    <optgroup label="CORPORATE & PROFESSIONAL">
+                      <option value="Corporate Event">Corporate Event</option>
+                      <option value="Conference">Conference</option>
+                      <option value="Product Launch">Product Launch</option>
+                      <option value="Inauguration">Inauguration</option>
+                      <option value="Seminar">Seminar</option>
+                      <option value="Workshop">Workshop</option>
+                      <option value="Team Building">Team Building</option>
+                      <option value="Award Ceremony">Award Ceremony</option>
+                    </optgroup>
+                    <optgroup label="SEASONAL & CULTURAL">
+                      <option value="Pandal Decoration">Pandal Decoration</option>
+                      <option value="Durga Puja">Durga Puja</option>
+                      <option value="Diwali Celebration">Diwali Celebration</option>
+                      <option value="Christmas Party">Christmas Party</option>
+                      <option value="New Year Party">New Year Party</option>
+                      <option value="Cultural Event">Cultural Event</option>
+                      <option value="Religious Function">Religious Function</option>
+                    </optgroup>
+                    <optgroup label="SOCIAL & SPECIAL">
+                      <option value="Graduation Party">Graduation Party</option>
+                      <option value="Promotion Party">Promotion Party</option>
+                      <option value="Farewell Party">Farewell Party</option>
+                      <option value="House Warming">House Warming</option>
+                      <option value="Art Exhibition">Art Exhibition</option>
+                      <option value="Fashion Show">Fashion Show</option>
+                      <option value="Charity Event">Charity Event</option>
+                    </optgroup>
+                    <optgroup label="TOURS & EXPERIENCES">
+                      <option value="Destination Tour">Destination Tour</option>
+                      <option value="Group Tour">Group Tour</option>
+                      <option value="Adventure Package">Adventure Package</option>
+                      <option value="Holiday Package">Holiday Package</option>
+                    </optgroup>
+                    <option value="Other">Other (Please specify in message)</option>
                   </select>
                 </div>
 
@@ -242,13 +293,32 @@ export function ContactPageContent() {
                     aria-label="Location"
                   >
                     <option value="">Select location</option>
-                    <option value="Siliguri">Siliguri</option>
-                    <option value="Darjeeling">Darjeeling</option>
-                    <option value="Gangtok">Gangtok</option>
-                    <option value="Kalimpong">Kalimpong</option>
-                    <option value="Kurseong">Kurseong</option>
-                    <option value="Bagdogra">Bagdogra</option>
-                    <option value="Mirik">Mirik</option>
+                    <optgroup label="PRIMARY SERVICE AREAS">
+                      <option value="Siliguri">Siliguri</option>
+                      <option value="Darjeeling">Darjeeling</option>
+                      <option value="Gangtok">Gangtok</option>
+                      <option value="Kalimpong">Kalimpong</option>
+                      <option value="Kurseong">Kurseong</option>
+                      <option value="Bagdogra">Bagdogra</option>
+                      <option value="Mirik">Mirik</option>
+                    </optgroup>
+                    <optgroup label="NORTH BENGAL">
+                      <option value="Jalpaiguri">Jalpaiguri</option>
+                      <option value="Malda">Malda</option>
+                      <option value="Dooars">Dooars</option>
+                      <option value="Cooch Behar">Cooch Behar</option>
+                    </optgroup>
+                    <optgroup label="NORTHEAST INDIA">
+                      <option value="Assam">Assam</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Manipur">Manipur</option>
+                    </optgroup>
+                    <option value="Other">Other Location (Specify in message)</option>
                   </select>
                 </div>
 
