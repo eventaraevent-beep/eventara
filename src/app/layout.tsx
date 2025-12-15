@@ -82,6 +82,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
+        {/* Favicon & Manifest */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+        
         {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
         <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#D4AF37" media="(prefers-color-scheme: light)" />
