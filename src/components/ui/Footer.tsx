@@ -77,7 +77,9 @@ export function Footer() {
               </a>
               <a href="https://www.instagram.com/eventaraevents/" target="_blank" rel="noopener noreferrer" className="text-event-gold hover:text-light-gold" title="Follow us on Instagram" aria-label="Follow us on Instagram">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8.29 20v-7.21H5.33V9.25h2.96V7.02c0-2.92 1.78-4.51 4.39-4.51 1.25 0 2.32.09 2.63.13v3.05h-1.81c-1.42 0-1.69.67-1.69 1.66v2.17h3.37l-.44 3.54h-2.93V20" />
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M16.5 7.5C16.5 8.327 15.827 9 15 9C14.173 9 13.5 8.327 13.5 7.5C13.5 6.673 14.173 6 15 6C15.827 6 16.5 6.673 16.5 7.5Z" fill="currentColor"/>
+                  <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeWidth="2"/>
                 </svg>
               </a>
             </div>
