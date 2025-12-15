@@ -8,7 +8,6 @@ interface LeadMagnetModalProps {
   magnet: 'checklist' | 'budget' | 'calculator';
   isOpen: boolean;
   onClose: () => void;
-  onSubmit?: (data: { email: string; phone: string; name: string }) => void;
 }
 
 const magnetData = {
@@ -60,7 +59,6 @@ export function LeadMagnetModal({
   magnet,
   isOpen,
   onClose,
-  onSubmit,
 }: LeadMagnetModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const data = magnetData[magnet];
@@ -72,16 +70,40 @@ export function LeadMagnetModal({
   }) => {
     setIsSubmitting(true);
     try {
-      if (onSubmit) {
-        onSubmit(formData);
-      } else {
-        // Default handling - send to WhatsApp
-        const message = `Hi! I'm ${formData.name}. I'd like to download the ${data.title}. Email: ${formData.email}, Phone: ${formData.phone}`;
-        const whatsappUrl = `https://wa.me/919332345023?text=${encodeURIComponent(
-          message
-        )}`;
-        window.open(whatsappUrl, '_blank');
+      // Send to API endpoint
+      const response = await fetch('/api/lead-capture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.name,
+          phone: formData.phone,
+          magnetType: magnet,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit');
       }
+
+      // Show success and close modal after 1 second
+      setTimeout(() => {
+        onClose();
+      }, 1000);
+
+      // Optional: Track GA4 event
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'lead_magnet_download', {
+          magnet_type: magnet,
+        });
+      }
+    } catch (error) {
+      // Fallback to WhatsApp if API fails
+      console.error('Lead submission error:', error);
+      const message = `Hi! I'm ${formData.name}. I'd like to download the ${data.title}. Email: ${formData.email}, Phone: ${formData.phone}`;
+      const whatsappUrl = `https://wa.me/919332345023?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
     } finally {
       setIsSubmitting(false);
     }

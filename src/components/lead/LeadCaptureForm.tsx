@@ -32,6 +32,21 @@ export function LeadCaptureForm({
     setError('');
 
     try {
+      // Validate inputs
+      if (!name.trim() || !email.trim() || !eventType) {
+        setError('Please fill in all fields');
+        setLoading(false);
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        setError('Please enter a valid email address');
+        setLoading(false);
+        return;
+      }
+
       // Send to backend/email service
       const response = await fetch('/api/lead-capture', {
         method: 'POST',
@@ -46,7 +61,8 @@ export function LeadCaptureForm({
       });
 
       if (!response.ok) {
-        throw new Error('Failed to submit form');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Failed to submit form');
       }
 
       setSubmitted(true);
@@ -59,15 +75,16 @@ export function LeadCaptureForm({
         });
       }
 
-      // Reset form after 2 seconds
+      // Reset form after 3 seconds
       setTimeout(() => {
         setEmail('');
         setName('');
         setEventType('wedding');
         setSubmitted(false);
-      }, 2000);
+      }, 3000);
     } catch (err) {
-      setError('Failed to submit. Please try again or contact us directly.');
+      const errorMsg = err instanceof Error ? err.message : 'An error occurred';
+      setError(`${errorMsg}. Try again or message us on WhatsApp.`);
       console.error('Lead capture error:', err);
     } finally {
       setLoading(false);

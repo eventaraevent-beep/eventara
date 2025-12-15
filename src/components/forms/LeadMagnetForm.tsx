@@ -12,6 +12,8 @@ interface LeadMagnetFormProps {
 export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagnetFormProps) {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const magnetTitle = {
     checklist: 'Download Your Wedding Planning Checklist',
@@ -19,15 +21,63 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
     calculator: 'Access Wedding Cost Calculator',
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validateForm = () => {
+    // Clear previous error
+    setError('');
+
+    // Validate name
+    if (!formData.name.trim()) {
+      setError('Please enter your name');
+      return false;
+    }
+    if (formData.name.trim().length < 2) {
+      setError('Name must be at least 2 characters');
+      return false;
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim()) {
+      setError('Please enter your email');
+      return false;
+    }
+    if (!emailRegex.test(formData.email)) {
+      setError('Please enter a valid email address');
+      return false;
+    }
+
+    // Validate phone
+    if (!formData.phone.trim()) {
+      setError('Please enter your phone number');
+      return false;
+    }
+    if (formData.phone.replace(/\D/g, '').length < 10) {
+      setError('Please enter a valid phone number');
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.name && formData.email && formData.phone) {
+    
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
       onSubmit(formData);
       setSubmitted(true);
       setTimeout(() => {
         setFormData({ name: '', email: '', phone: '' });
         setSubmitted(false);
       }, 3000);
+    } catch (err) {
+      setError('Failed to submit. Please try again or contact us on WhatsApp.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -56,6 +106,16 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
       onSubmit={handleSubmit}
       className="space-y-4"
     >
+      {error && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm"
+        >
+          {error}
+        </motion.div>
+      )}
+
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-cream-light mb-2">
           Full Name *
@@ -65,7 +125,10 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
           id="name"
           required
           value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          onChange={(e) => {
+            setFormData({ ...formData, name: e.target.value });
+            setError('');
+          }}
           className="w-full px-4 py-3 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
           placeholder="Your name"
         />
@@ -80,7 +143,10 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
           id="email"
           required
           value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          onChange={(e) => {
+            setFormData({ ...formData, email: e.target.value });
+            setError('');
+          }}
           className="w-full px-4 py-3 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
           placeholder="your.email@example.com"
         />
@@ -95,7 +161,10 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
           id="phone"
           required
           value={formData.phone}
-          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+          onChange={(e) => {
+            setFormData({ ...formData, phone: e.target.value });
+            setError('');
+          }}
           className="w-full px-4 py-3 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
           placeholder="+91 9876543210"
         />
@@ -103,10 +172,10 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
 
       <button
         type="submit"
-        disabled={isLoading}
+        disabled={isLoading || isSubmitting}
         className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed font-playfair text-lg"
       >
-        {isLoading ? 'Processing...' : `Get ${magnetTitle[magnet].split(' ').pop()}`}
+        {isSubmitting || isLoading ? 'Processing...' : `Get ${magnetTitle[magnet].split(' ').pop()}`}
       </button>
 
       <p className="text-xs text-cream-light/60 text-center">
