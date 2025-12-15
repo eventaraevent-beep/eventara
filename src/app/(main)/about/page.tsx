@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 
 import { AboutHero } from '@/components/sections/AboutHero';
 import { AboutStory } from '@/components/sections/AboutStory';
-import { TeamSection } from '@/components/sections/TeamSection';
 import { AwardsSection } from '@/components/sections/AwardsSection';
 
 export default function AboutPage() {
@@ -23,7 +22,6 @@ export default function AboutPage() {
     <>
       <AboutHero />
       <AboutStory />
-      <TeamSection />
       <AwardsSection />
     </>
   );
