@@ -58,9 +58,8 @@ export function ServiceSchema({
       closes: '21:00',
     },
     sameAs: [
-      'https://www.facebook.com/eventara',
-      'https://www.instagram.com/eventara',
-      'https://www.linkedin.com/company/eventara',
+      'https://www.facebook.com/profile.php?id=61577290076145',
+      'https://www.instagram.com/eventaraevents/',
       'https://www.youtube.com/@eventara',
     ],
     aggregateRating: {
@@ -114,9 +113,8 @@ export function OrganizationSchema({
     logo: `${siteURL}/logo.png`,
     description: 'Professional event planning services for weddings, corporate events, and celebrations',
     sameAs: [
-      'https://www.facebook.com/eventara',
-      'https://www.instagram.com/eventara',
-      'https://www.linkedin.com/company/eventara',
+      'https://www.facebook.com/profile.php?id=61577290076145',
+      'https://www.instagram.com/eventaraevents/',
     ],
     contactPoint: {
       '@type': 'ContactPoint',

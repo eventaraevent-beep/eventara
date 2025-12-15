@@ -30,9 +30,8 @@ export function EventManagementCompanySchema() {
           name: 'Eventara Team',
         },
         sameAs: [
-          'https://www.facebook.com/eventara',
-          'https://www.instagram.com/eventara',
-          'https://www.linkedin.com/company/eventara',
+          'https://www.facebook.com/profile.php?id=61577290076145',
+          'https://www.instagram.com/eventaraevents/',
           'https://www.whatsapp.com',
         ],
         contactPoint: {
@@ -196,9 +195,8 @@ export function EventManagementCompanySchema() {
           closes: '18:00',
         },
         sameAs: [
-          'https://www.facebook.com/eventara',
-          'https://www.instagram.com/eventara',
-          'https://www.linkedin.com/company/eventara',
+          'https://www.facebook.com/profile.php?id=61577290076145',
+          'https://www.instagram.com/eventaraevents/',
         ],
       },
 
