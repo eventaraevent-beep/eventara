@@ -34,7 +34,6 @@ export function generateSitemapEntries() {
     { url: '/about', priority: 0.8, changefreq: 'monthly' as const },
     { url: '/blog', priority: 0.85, changefreq: 'weekly' as const },
     { url: '/contact', priority: 0.8, changefreq: 'monthly' as const },
-    { url: '/gallery', priority: 0.75, changefreq: 'monthly' as const },
     { url: '/venues', priority: 0.8, changefreq: 'weekly' as const },
   ];
 
