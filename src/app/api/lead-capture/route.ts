@@ -1,5 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// Magnet download links mapping
+const MAGNET_DOWNLOADS = {
+  'wedding-checklist': '/magnets/wedding-checklist.html',
+  'budget-guide': '/magnets/budget-guide.html',
+  'cost-calculator': '/magnets/cost-calculator.html',
+};
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -27,14 +34,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Get download link for the magnet type
+    const downloadLink = MAGNET_DOWNLOADS[magnetType as keyof typeof MAGNET_DOWNLOADS] || null;
+
     // TODO: Integrate with email service (SendGrid, Mailgun, etc.)
-    // For now, just log and return success
+    // Send email with download link included
     console.log('Lead captured:', {
       email,
       name,
       phone,
       eventType,
       magnetType,
+      downloadLink,
       timestamp,
       userAgent: request.headers.get('user-agent'),
       ip: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip'),
@@ -47,6 +58,7 @@ export async function POST(request: NextRequest) {
       {
         success: true,
         message: 'Lead captured successfully',
+        downloadLink,
         data: { email, name, phone, magnetType },
       },
       { status: 200 }

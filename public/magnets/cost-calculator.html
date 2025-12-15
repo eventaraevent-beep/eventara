@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Cost Calculator - Eventara</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #fff; padding: 40px 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: #1a1a1a; padding: 40px; border: 2px solid #D4AF37; border-radius: 8px; }
+        h1 { color: #D4AF37; margin-bottom: 10px; font-size: 2.5em; }
+        .subtitle { color: #D4AF37; font-size: 0.9em; margin-bottom: 30px; }
+        h2 { color: #D4AF37; margin-top: 25px; margin-bottom: 15px; font-size: 1.3em; border-bottom: 2px solid #D4AF37; padding-bottom: 10px; }
+        .calculator { background: #2a2a2a; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #D4AF37; }
+        .form-group { margin: 15px 0; }
+        label { display: block; color: #D4AF37; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; margin-bottom: 10px; background: #1a1a1a; border: 1px solid #D4AF37; color: #fff; border-radius: 4px; }
+        input:focus, select:focus { outline: none; border-color: #F1C40F; }
+        button { background: #D4AF37; color: #0a0a0a; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1.1em; margin-top: 10px; width: 100%; }
+        button:hover { background: #F1C40F; }
+        .item-row { display: flex; gap: 10px; align-items: flex-end; margin-bottom: 10px; }
+        .item-row input { flex: 1; margin-bottom: 0; }
+        .item-row button { width: auto; padding: 10px 20px; margin: 0; background: #d9534f; }
+        .item-row button:hover { background: #c9302c; }
+        .result-box { background: #2a2a2a; padding: 20px; margin: 20px 0; border-radius: 8px; border: 2px solid #D4AF37; }
+        .result-box h3 { color: #D4AF37; margin-bottom: 15px; }
+        .result-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #333; }
+        .result-item:last-child { border-bottom: none; }
+        .total { display: flex; justify-content: space-between; padding: 15px 0; border-top: 2px solid #D4AF37; margin-top: 15px; font-size: 1.2em; font-weight: bold; color: #D4AF37; }
+        .add-btn { background: #D4AF37; color: #0a0a0a; padding: 10px 20px; width: auto; margin: 10px 0; }
+        .breakdown { margin-top: 20px; }
+        .category-result { background: #1a1a1a; padding: 15px; margin: 10px 0; border-left: 4px solid #D4AF37; border-radius: 4px; }
+        .category-result strong { color: #D4AF37; }
+        @media print { body { background: #fff; color: #000; } .container { background: #fff; border: 1px solid #ddd; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wedding Cost Calculator</h1>
+        <p class="subtitle">Calculate Your Complete Wedding Budget | Eventara</p>
+
+        <div class="calculator">
+            <h2>📊 Interactive Cost Calculator</h2>
+            
+            <div class="form-group">
+                <label>Number of Guests:</label>
+                <input type="number" id="guestCount" value="200" min="10" max="1000" placeholder="Enter guest count">
+            </div>
+
+            <div class="form-group">
+                <label>Cost Per Plate (₹):</label>
+                <input type="number" id="costPerPlate" value="1500" min="500" max="5000" placeholder="Enter cost per plate">
+            </div>
+
+            <div class="form-group">
+                <label>Venue Rental (₹):</label>
+                <input type="number" id="venue" value="300000" min="100000" max="2000000" placeholder="Enter venue cost">
+            </div>
+
+            <div class="form-group">
+                <label>Decoration (₹):</label>
+                <input type="number" id="decoration" value="300000" min="50000" max="1000000" placeholder="Enter decoration cost">
+            </div>
+
+            <div class="form-group">
+                <label>Photography & Videography (₹):</label>
+                <input type="number" id="photography" value="200000" min="50000" max="500000" placeholder="Enter photography cost">
+            </div>
+
+            <div class="form-group">
+                <label>Music/DJ/Band (₹):</label>
+                <input type="number" id="music" value="100000" min="25000" max="300000" placeholder="Enter music cost">
+            </div>
+
+            <div class="form-group">
+                <label>Wedding Attire (₹):</label>
+                <input type="number" id="attire" value="100000" min="25000" max="500000" placeholder="Enter attire cost">
+            </div>
+
+            <div class="form-group">
+                <label>Gifts & Favors (₹):</label>
+                <input type="number" id="gifts" value="50000" min="10000" max="500000" placeholder="Enter gifts cost">
+            </div>
+
+            <div class="form-group">
+                <label>Other Expenses (₹):</label>
+                <input type="number" id="other" value="50000" min="0" max="500000" placeholder="Enter other costs">
+            </div>
+
+            <button onclick="calculateCost()">Calculate Total Cost</button>
+        </div>
+
+        <div id="results" style="display:none;">
+            <div class="result-box">
+                <h3>Cost Breakdown</h3>
+                <div class="result-item">
+                    <span>Catering (Food & Beverage):</span>
+                    <span id="result-catering">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Venue & Accommodation:</span>
+                    <span id="result-venue">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Decoration & Floral:</span>
+                    <span id="result-decoration">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Photography & Video:</span>
+                    <span id="result-photography">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Entertainment:</span>
+                    <span id="result-music">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Wedding Attire:</span>
+                    <span id="result-attire">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Gifts & Favors:</span>
+                    <span id="result-gifts">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Other Expenses:</span>
+                    <span id="result-other">₹0</span>
+                </div>
+                <div class="total">
+                    <span>Total Budget (Excl. Tax):</span>
+                    <span id="result-subtotal">₹0</span>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Tax & Final Estimate</h3>
+                <div class="result-item">
+                    <span>GST (18%):</span>
+                    <span id="result-gst">₹0</span>
+                </div>
+                <div class="result-item">
+                    <span>Gratuity (10%):</span>
+                    <span id="result-gratuity">₹0</span>
+                </div>
+                <div class="total">
+                    <span>TOTAL WEDDING COST:</span>
+                    <span id="result-total">₹0</span>
+                </div>
+                <div class="result-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+                    <span>Per Guest Cost:</span>
+                    <span id="result-perguest">₹0</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; background: #2a2a2a; border-radius: 8px; text-align: center;">
+                <p style="color: #D4AF37; font-weight: bold;">Ready to Plan Your Dream Wedding?</p>
+                <p style="margin-top: 10px; color: #e0e0e0;">Share this budget breakdown with Eventara for personalized planning assistance.</p>
+                <p style="margin-top: 10px; color: #888; font-size: 0.9em;">📧 eventaraevent@gmail.com | 📱 +91 9332345023 (WhatsApp)</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; padding: 20px; background: #2a2a2a; border-radius: 8px;">
+            <h3 style="color: #D4AF37; margin-bottom: 15px;">💡 Cost Saving Tips:</h3>
+            <ul style="margin-left: 20px;">
+                <li style="margin: 8px 0;">Book venues 12 months in advance for 15-20% discounts</li>
+                <li style="margin: 8px 0;">Negotiate with vendors as a package for better rates</li>
+                <li style="margin: 8px 0;">Choose off-season dates to save 30-40% on costs</li>
+                <li style="margin: 8px 0;">Reduce guest count by 50 to save ₹1.5-2 lakhs</li>
+                <li style="margin: 8px 0;">Use digital invitations instead of printed ones</li>
+                <li style="margin: 8px 0;">Mix and match vendors instead of all-in-one packages</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function formatCurrency(value) {
+            return '₹' + value.toLocaleString('en-IN');
+        }
+
+        function calculateCost() {
+            const guestCount = parseInt(document.getElementById('guestCount').value) || 0;
+            const costPerPlate = parseInt(document.getElementById('costPerPlate').value) || 0;
+            const venue = parseInt(document.getElementById('venue').value) || 0;
+            const decoration = parseInt(document.getElementById('decoration').value) || 0;
+            const photography = parseInt(document.getElementById('photography').value) || 0;
+            const music = parseInt(document.getElementById('music').value) || 0;
+            const attire = parseInt(document.getElementById('attire').value) || 0;
+            const gifts = parseInt(document.getElementById('gifts').value) || 0;
+            const other = parseInt(document.getElementById('other').value) || 0;
+
+            const catering = guestCount * costPerPlate;
+            const subtotal = catering + venue + decoration + photography + music + attire + gifts + other;
+            const gst = Math.round(subtotal * 0.18);
+            const gratuity = Math.round(subtotal * 0.10);
+            const total = subtotal + gst + gratuity;
+            const perGuest = guestCount > 0 ? Math.round(total / guestCount) : 0;
+
+            document.getElementById('result-catering').textContent = formatCurrency(catering);
+            document.getElementById('result-venue').textContent = formatCurrency(venue);
+            document.getElementById('result-decoration').textContent = formatCurrency(decoration);
+            document.getElementById('result-photography').textContent = formatCurrency(photography);
+            document.getElementById('result-music').textContent = formatCurrency(music);
+            document.getElementById('result-attire').textContent = formatCurrency(attire);
+            document.getElementById('result-gifts').textContent = formatCurrency(gifts);
+            document.getElementById('result-other').textContent = formatCurrency(other);
+            document.getElementById('result-subtotal').textContent = formatCurrency(subtotal);
+            document.getElementById('result-gst').textContent = formatCurrency(gst);
+            document.getElementById('result-gratuity').textContent = formatCurrency(gratuity);
+            document.getElementById('result-total').textContent = formatCurrency(total);
+            document.getElementById('result-perguest').textContent = formatCurrency(perGuest);
+
+            document.getElementById('results').style.display = 'block';
+        }
+
+        // Calculate on page load
+        calculateCost();
+    </script>
+</body>
+</html>

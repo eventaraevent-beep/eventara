@@ -61,7 +61,14 @@ export function LeadMagnetModal({
   onClose,
 }: LeadMagnetModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [downloadLink, setDownloadLink] = useState<string | null>(null);
   const data = magnetData[magnet];
+
+  const magnetToFileMap = {
+    checklist: '/magnets/wedding-checklist.html',
+    budget: '/magnets/budget-guide.html',
+    calculator: '/magnets/cost-calculator.html',
+  };
 
   const handleSubmit = async (formData: {
     email: string;
@@ -87,10 +94,15 @@ export function LeadMagnetModal({
         throw new Error('Failed to submit');
       }
 
-      // Show success and close modal after 1 second
-      setTimeout(() => {
-        onClose();
-      }, 1000);
+      const responseData = await response.json();
+      
+      // Set download link if available
+      if (responseData.downloadLink) {
+        setDownloadLink(responseData.downloadLink);
+      } else {
+        // Fallback to magnet file mapping
+        setDownloadLink(magnetToFileMap[magnet as keyof typeof magnetToFileMap]);
+      }
 
       // Optional: Track GA4 event
       if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -104,8 +116,20 @@ export function LeadMagnetModal({
       const message = `Hi! I'm ${formData.name}. I'd like to download the ${data.title}. Email: ${formData.email}, Phone: ${formData.phone}`;
       const whatsappUrl = `https://wa.me/919332345023?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
+      setTimeout(() => {
+        onClose();
+      }, 1000);
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleDownload = () => {
+    if (downloadLink) {
+      window.open(downloadLink, '_blank');
+      setTimeout(() => {
+        onClose();
+      }, 500);
     }
   };
 
@@ -160,13 +184,41 @@ export function LeadMagnetModal({
                 </ul>
               </div>
 
-              {/* Form */}
+              {/* Form or Download */}
               <div className="p-5">
-                <LeadMagnetForm
-                  magnet={magnet}
-                  onSubmit={handleSubmit}
-                  isLoading={isSubmitting}
-                />
+                {downloadLink ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="text-center py-6"
+                  >
+                    <div className="text-5xl mb-4">✨</div>
+                    <h3 className="text-xl font-playfair font-bold text-event-gold mb-2">
+                      Success!
+                    </h3>
+                    <p className="text-cream-light/80 text-sm mb-6">
+                      Your {data.title} is ready to download. Check your email for the download link!
+                    </p>
+                    <button
+                      onClick={handleDownload}
+                      className="w-full bg-event-gold text-rich-black font-bold py-3 rounded-lg hover:bg-light-gold transition-colors mb-3"
+                    >
+                      📥 Download Now
+                    </button>
+                    <button
+                      onClick={onClose}
+                      className="w-full border border-event-gold text-event-gold font-bold py-2 rounded-lg hover:bg-event-gold/10 transition-colors"
+                    >
+                      Close
+                    </button>
+                  </motion.div>
+                ) : (
+                  <LeadMagnetForm
+                    magnet={magnet}
+                    onSubmit={handleSubmit}
+                    isLoading={isSubmitting}
+                  />
+                )}
               </div>
             </div>
           </motion.div>
