@@ -5,34 +5,14 @@ import { useEffect, useState } from 'react';
 /**
  * Sticky WhatsApp Button for Mobile
  * Smart positioning to avoid footer overlap
- * Only shows on mobile devices
+ * Shows on all devices with improved visibility
  */
 
 export function StickyWhatsAppButton() {
-  const [isMobile, setIsMobile] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // Check if device is mobile
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-
-    // Handle scroll to show/hide button
-    const handleScroll = () => {
-      // Always show on mobile
-      setIsVisible(true);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('resize', checkMobile);
-      window.removeEventListener('scroll', handleScroll);
-    };
+    setIsClient(true);
   }, []);
 
   const handleWhatsAppClick = () => {
@@ -40,12 +20,11 @@ export function StickyWhatsAppButton() {
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'button_click', {
         button_name: 'sticky_whatsapp',
-        device_type: 'mobile',
       });
     }
   };
 
-  if (!isMobile || !isVisible) {
+  if (!isClient) {
     return null;
   }
 
@@ -55,7 +34,7 @@ export function StickyWhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleWhatsAppClick}
-      className="fixed bottom-24 right-4 md:hidden z-50 flex items-center justify-center w-14 h-14 bg-gradient-to-br from-event-gold to-light-gold text-rich-black rounded-full shadow-2xl hover:shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce"
+      className="fixed bottom-6 right-6 z-[9999] flex items-center justify-center w-14 h-14 bg-gradient-to-br from-event-gold to-light-gold text-rich-black rounded-full shadow-2xl hover:shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 animate-pulse"
       title="Chat on WhatsApp"
       aria-label="Chat on WhatsApp"
     >
