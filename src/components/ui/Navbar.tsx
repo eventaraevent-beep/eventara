@@ -19,7 +19,6 @@ export function Navbar() {
     { label: 'Services', href: '/services' },
     { label: 'Blog', href: '/blog' },
     { label: 'Venues', href: '/venues' },
-    { label: 'Contact', href: '/contact' },
   ];
 
   return (
