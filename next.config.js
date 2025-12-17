@@ -96,7 +96,7 @@ const nextConfig = {
     ];
   },
 
-  // Redirects for non-existent pages
+  // Redirects for non-existent pages and common URLs
   redirects: async () => {
     return [
       {
@@ -108,6 +108,41 @@ const nextConfig = {
         source: '/terms',
         destination: '/',
         permanent: false,
+      },
+      {
+        source: '/privacy-policy',
+        destination: '/',
+        permanent: false,
+      },
+      {
+        source: '/terms-conditions',
+        destination: '/',
+        permanent: false,
+      },
+      {
+        source: '/about-us',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/our-services',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/wedding-venues',
+        destination: '/venues',
+        permanent: true,
+      },
+      {
+        source: '/contact-us',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/blog-posts',
+        destination: '/blog',
+        permanent: true,
       },
     ];
   },

@@ -1,16 +1,29 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Eventara | Luxury Event Management',
+  title: 'About Eventara | Premium Luxury Event Management Since 2010',
   description:
-    'Learn about Eventara, the luxury event management company serving Siliguri, Darjeeling, and the Himalayan corridor since 2010.',
+    'Discover Eventara\'s journey in luxury event management across Siliguri, Darjeeling, and Himalayan region. Specializing in weddings, corporate events, and destination celebrations with expertise in cultural traditions and premium service delivery.',
   keywords: [
     'about eventara',
-    'event management company',
-    'luxury events',
-    'team',
-    'experience',
+    'luxury event management',
+    'event planning company',
+    'wedding planner team',
+    'corporate event specialist',
+    'event management expertise',
+    'Siliguri event company',
+    'Darjeeling event organizer',
   ],
+  openGraph: {
+    title: 'About Eventara | Premium Event Management',
+    description:
+      'Learn about our luxury event management services and commitment to creating unforgettable celebrations.',
+    type: 'website',
+    url: 'https://eventaraevents.com/about',
+  },
+  alternates: {
+    canonical: 'https://eventaraevents.com/about',
+  },
 };
 
 import { AboutHero } from '@/components/sections/AboutHero';
