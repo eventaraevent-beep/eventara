@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "@next/next/no-html-link-for-pages": "off",
+    "@next/next/link-passhref": "off",
+    "react/display-name": "off",
+    "@next/next/no-img-element": "off",
+    "@next/next/no-sync-scripts": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/html-has-lang": "off",
+    "@next/next/no-head-element": "off",
+    "@next/next/no-before-interactive-script-outside-document": "off"
+  }
+}

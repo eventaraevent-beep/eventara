@@ -131,7 +131,7 @@ export function BudgetPlannerMagnet() {
             </div>
           </div>
 
-          {/* Budget Breakdown & Lead Form */}
+            {/* Budget Breakdown & Lead Form */}
           <div className="space-y-6">
             {/* Breakdown Chart */}
             <div className="bg-rich-black/50 rounded-lg p-6 border border-event-gold/20">
@@ -150,9 +150,8 @@ export function BudgetPlannerMagnet() {
                     <div className="w-full bg-rich-black/50 rounded h-2">
                       <div
                         className="bg-gradient-to-r from-event-gold to-light-gold rounded h-2 transition-all duration-500 progress-bar"
-                        style={{
-                          width: `${item.percentage}%`,
-                        }}
+                        // @ts-ignore - Dynamic inline style for reactive width percentage
+                        style={{ width: `${item.percentage}%` }}
                       />
                     </div>
                   </div>

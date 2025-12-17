@@ -31,6 +31,16 @@
         .breakdown { margin-top: 20px; }
         .category-result { background: #1a1a1a; padding: 15px; margin: 10px 0; border-left: 4px solid #D4AF37; border-radius: 4px; }
         .category-result strong { color: #D4AF37; }
+        .results-hidden { display: none; }
+        .result-item-divider { margin-top: 15px; padding-top: 15px; border-top: 1px solid #333; }
+        .footer-section { margin-top: 30px; padding: 20px; background: #2a2a2a; border-radius: 8px; text-align: center; }
+        .footer-title { color: #D4AF37; font-weight: bold; }
+        .footer-text { margin-top: 10px; color: #e0e0e0; }
+        .footer-contact { margin-top: 10px; color: #888; font-size: 0.9em; }
+        .tips-section { margin-top: 40px; padding: 20px; background: #2a2a2a; border-radius: 8px; }
+        .tips-section h3 { color: #D4AF37; margin-bottom: 15px; }
+        .tips-section ul { margin-left: 20px; }
+        .tips-section li { margin: 8px 0; }
         @media print { body { background: #fff; color: #000; } .container { background: #fff; border: 1px solid #ddd; } }
     </style>
 </head>
@@ -90,7 +100,7 @@
             <button onclick="calculateCost()">Calculate Total Cost</button>
         </div>
 
-        <div id="results" style="display:none;">
+        <div id="results" class="results-hidden">
             <div class="result-box">
                 <h3>Cost Breakdown</h3>
                 <div class="result-item">
@@ -145,28 +155,28 @@
                     <span>TOTAL WEDDING COST:</span>
                     <span id="result-total">₹0</span>
                 </div>
-                <div class="result-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+                <div class="result-item result-item-divider">
                     <span>Per Guest Cost:</span>
                     <span id="result-perguest">₹0</span>
                 </div>
             </div>
 
-            <div style="margin-top: 30px; padding: 20px; background: #2a2a2a; border-radius: 8px; text-align: center;">
-                <p style="color: #D4AF37; font-weight: bold;">Ready to Plan Your Dream Wedding?</p>
-                <p style="margin-top: 10px; color: #e0e0e0;">Share this budget breakdown with Eventara for personalized planning assistance.</p>
-                <p style="margin-top: 10px; color: #888; font-size: 0.9em;">📧 eventaraevent@gmail.com | 📱 +91 9332345023 (WhatsApp)</p>
+            <div class="footer-section">
+                <p class="footer-title">Ready to Plan Your Dream Wedding?</p>
+                <p class="footer-text">Share this budget breakdown with Eventara for personalized planning assistance.</p>
+                <p class="footer-contact">📧 eventaraevent@gmail.com | 📱 +91 9332345023 (WhatsApp)</p>
             </div>
         </div>
 
-        <div style="margin-top: 40px; padding: 20px; background: #2a2a2a; border-radius: 8px;">
-            <h3 style="color: #D4AF37; margin-bottom: 15px;">💡 Cost Saving Tips:</h3>
-            <ul style="margin-left: 20px;">
-                <li style="margin: 8px 0;">Book venues 12 months in advance for 15-20% discounts</li>
-                <li style="margin: 8px 0;">Negotiate with vendors as a package for better rates</li>
-                <li style="margin: 8px 0;">Choose off-season dates to save 30-40% on costs</li>
-                <li style="margin: 8px 0;">Reduce guest count by 50 to save ₹1.5-2 lakhs</li>
-                <li style="margin: 8px 0;">Use digital invitations instead of printed ones</li>
-                <li style="margin: 8px 0;">Mix and match vendors instead of all-in-one packages</li>
+        <div class="tips-section">
+            <h3>💡 Cost Saving Tips:</h3>
+            <ul>
+                <li>Book venues 12 months in advance for 15-20% discounts</li>
+                <li>Negotiate with vendors as a package for better rates</li>
+                <li>Choose off-season dates to save 30-40% on costs</li>
+                <li>Reduce guest count by 50 to save ₹1.5-2 lakhs</li>
+                <li>Use digital invitations instead of printed ones</li>
+                <li>Mix and match vendors instead of all-in-one packages</li>
             </ul>
         </div>
     </div>
@@ -177,6 +187,8 @@
         }
 
         function calculateCost() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.classList.remove('results-hidden');
             const guestCount = parseInt(document.getElementById('guestCount').value) || 0;
             const costPerPlate = parseInt(document.getElementById('costPerPlate').value) || 0;
             const venue = parseInt(document.getElementById('venue').value) || 0;
@@ -207,8 +219,6 @@
             document.getElementById('result-gratuity').textContent = formatCurrency(gratuity);
             document.getElementById('result-total').textContent = formatCurrency(total);
             document.getElementById('result-perguest').textContent = formatCurrency(perGuest);
-
-            document.getElementById('results').style.display = 'block';
         }
 
         // Calculate on page load

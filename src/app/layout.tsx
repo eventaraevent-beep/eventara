@@ -42,6 +42,10 @@ export const metadata: Metadata = {
     'luxury events',
     'destination wedding',
   ],
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   robots: {
     index: true,
     follow: true,
@@ -90,18 +94,14 @@ export default function RootLayout({
         
         {/* Favicon & Manifest */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="manifest" href="/manifest.json" />
-        {/* Apple touch icon - uses SVG fallback (modern devices support SVG) */}
-        <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+        <link rel="manifest" href="/manifest.json" />
         
         {/* Preload critical fonts to reduce CLS and FCP */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
-        <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
-        <meta name="theme-color" content="#D4AF37" media="(prefers-color-scheme: light)" />
+        {/* Color scheme for dark mode */}
         <meta name="color-scheme" content="dark" />
         
         {/* Canonical URL */}

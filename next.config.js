@@ -25,6 +25,15 @@ const nextConfig = {
   // Optimize for static generation
   staticPageGenerationTimeout: 60,
 
+  // Disable x-powered-by header for security
+  poweredByHeader: false,
+
+  // Enable SWR (Stale While Revalidate) for better performance
+  onDemandEntries: {
+    maxInactiveAge: 60 * 1000,
+    pagesBufferLength: 5,
+  },
+
   // Headers for caching
   headers: async () => {
     return [
@@ -106,12 +115,30 @@ const nextConfig = {
   // Performance optimizations
   productionBrowserSourceMaps: false,
 
+  // React strict mode for development
+  reactStrictMode: true,
+
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: [
       'framer-motion',
       'react-dom',
     ],
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
+  },
+
+  // Webpack optimizations
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.optimization = {
+        ...config.optimization,
+        usedExports: true,
+        sideEffects: false,
+      };
+    }
+    return config;
   },
 };
 

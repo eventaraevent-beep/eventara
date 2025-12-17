@@ -1,33 +1,40 @@
 User-agent: *
 Allow: /
 Disallow: /admin
-Disallow: /api
+Disallow: /api/
+Disallow: /.next/
 Disallow: /*.json$
-Disallow: /*?*
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.jpg$
 Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.webp$
 
 # High-priority pages for crawlers
-# Crawl these first
-Crawl-delay: 1
-Request-rate: 10/1s
+Crawl-delay: 0.5
+Request-rate: 20/1s
 
-# Sitemap location
+# Sitemap locations for all content
 Sitemap: https://eventaraevents.com/sitemap.xml
-Sitemap: https://eventaraevents.com/sitemap-services.xml
-Sitemap: https://eventaraevents.com/sitemap-locations.xml
+Sitemap: https://eventaraevents.com/sitemap-index.xml
+Sitemap: https://eventaraevents.com/blog-sitemap.xml
+Sitemap: https://eventaraevents.com/venues-sitemap.xml
 
-# Google Bot - Higher crawl rate
+# Google Bot - Higher crawl rate for faster indexing
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
+Request-rate: 0/1s
 
 # Bing Bot
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0.5
+Request-rate: 10/1s
 
 # Bad bots
 User-agent: AhrefsBot

@@ -2,7 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-/* stylelint-enable at-rule-no-unknown */
+/* stylelint-enable at-route-no-unknown */
 
 /* Font optimization - reduce font loading impact */
 @layer base {
@@ -11,12 +11,17 @@
     /* Enable hardware acceleration for smooth scrolling */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Better rendering for text and graphics */
+    text-rendering: optimizeLegibility;
   }
 
   body {
     @apply bg-rich-black text-cream-light font-inter;
     /* Optimize text rendering */
     text-rendering: optimizeSpeed;
+    /* Enable font feature settings for better typography */
+    -webkit-font-feature-settings: 'kern' 1;
+    font-feature-settings: 'kern' 1;
   }
 
   h1,
@@ -28,12 +33,21 @@
     @apply font-playfair font-bold;
     /* Prevent layout shift during font loading */
     font-display: swap;
+    /* Improve heading rendering */
+    -webkit-text-stroke: 0.5px transparent;
   }
 
   /* Optimize image rendering */
   img {
     @apply max-w-full h-auto;
     /* Use content-visibility for better performance */
+    content-visibility: auto;
+    /* Improve image quality rendering */
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  /* Optimize video rendering */
+  video {
     content-visibility: auto;
   }
 
@@ -132,6 +146,7 @@
   /* Progress bar optimization */
   .progress-bar {
     will-change: width;
+    width: var(--progress-width, 0%);
   }
 }
 
